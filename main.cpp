@@ -38,14 +38,14 @@ int main(int argc, char *argv[])
     }
 
     GpioReader btnUp("/dev/gpiochip0", 5);
-    GpioReader btnDown("/dev/gpiochip0", 16);
+    GpioReader btnDown("/dev/gpiochip0", 6);
     GpioReader btnOk("/dev/gpiochip0", 26);
     GpxLogger gpxLogger;
 
     QQmlApplicationEngine engine;
 
-   MapController mapController;
-engine.rootContext()->setContextProperty("mapController", &mapController);
+    MapController mapController;
+    engine.rootContext()->setContextProperty("mapController", &mapController);
 
     engine.addImportPath("/usr/local/lib/qml");
     engine.addImportPath("/usr/lib/aarch64-linux-gnu/qt5/qml");

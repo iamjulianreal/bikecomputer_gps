@@ -24,10 +24,10 @@ Item {
     }
 
     function setView(lat, lon, zoom) {
-    if (!map || !map.view) return
-    mapController.setView(map.view, lat, lon, zoom)
-}
- 
+        if (!map) return
+        mapController.setView(map, lat, lon, zoom)
+    }
+
 
 
 
@@ -54,9 +54,9 @@ Item {
         renderingType: "plane"
         interactiveIcons: true
  
-        vehicleStandardIconFile: "/home/julian/bikecomputers/codex_gps/assets/vehicle.svg"
-  vehicleNoGpsSignalIconFile: "/home/julian/bikecomputers/codex_gps/assets/vehicle_not_fixed.svg"
-  vehicleInTunnelIconFile: "/home/julian/bikecomputers/codex_gps/assets/vehicle_tunnel.svg"
+        vehicleStandardIconFile: ":/qml/icons/vehicle.svg"
+        vehicleNoGpsSignalIconFile: ":/qml/icons/vehicle_not_fixed.svg"
+        vehicleInTunnelIconFile: ":/qml/icons/vehicle_tunnel.svg"
 
 
         onDatabaseLoadedChanged: {
