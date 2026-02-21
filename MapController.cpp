@@ -1,30 +1,29 @@
 #include "MapController.h"
+
 #include <QDebug>
+#include <QMetaObject>
 
-// IMPORTANT: include the libosmscout Qt headers that define osmscout::MapView
-// The exact include path can differ depending on how you built libosmscout.
-// Try these in order; one should work in your project:
-#include <osmscoutclientqt/MapView.h>
-// If that fails, alternatives (comment the above and try one):
-// #include <osmscout/MapView.h>
-// #include <osmscoutqt/MapView.h>
-
-void MapController::setView(QObject* mapViewObj, double lat, double lon, double zoom)
-{
+void MapController::setView(QObject *mapViewObj, double lat, double lon, double zoom) {
   if (!mapViewObj) {
     qWarning() << "MapController::setView: mapViewObj is null";
     return;
   }
 
-  // QML gives us an osmscout::MapView as QObject*. We need a cast.
-  auto* view = qobject_cast<osmscout::MapView*>(mapViewObj);
-  if (!view) {
-    qWarning() << "MapController::setView: object is not osmscout::MapView, got:" << mapViewObj;
-    return;
+  bool coordSet = QMetaObject::invokeMethod(mapViewObj, "SetCoord", Q_ARG(double, lat), Q_ARG(double, lon));
+  if (!coordSet) {
+    coordSet = QMetaObject::invokeMethod(mapViewObj, "setCoord", Q_ARG(double, lat), Q_ARG(double, lon));
+  }
+  if (!coordSet) {
+    coordSet = QMetaObject::invokeMethod(mapViewObj, "Set", Q_ARG(double, lat), Q_ARG(double, lon));
   }
 
-  // These method names depend on libosmscout version. Common patterns:
-  // Try the one that matches your headers. If compile fails, I’ll tell you the exact one to use.
-  view->SetCoord(lat, lon);   // or view->Set(lat, lon) depending on version
-  view->SetZoom(zoom);        // or view->SetMagnification(...)
+  bool zoomSet = QMetaObject::invokeMethod(mapViewObj, "SetZoom", Q_ARG(double, zoom));
+  if (!zoomSet) {
+    zoomSet = QMetaObject::invokeMethod(mapViewObj, "setZoom", Q_ARG(double, zoom));
+  }
+
+  if (!coordSet || !zoomSet) {
+    qWarning() << "MapController::setView: could not invoke expected methods on map view object" << mapViewObj
+               << "coordSet=" << coordSet << "zoomSet=" << zoomSet;
+  }
 }

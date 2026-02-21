@@ -12,6 +12,18 @@
 
 namespace {
 constexpr int kPollMs = 100;
+
+bool envEnabled(const char *name) {
+  const QByteArray value = qgetenv(name).trimmed().toLower();
+  return value == "1" || value == "true" || value == "yes" || value == "on";
+}
+
+QByteArray sentenceType(const QByteArray &line) {
+  if (line.size() < 6 || !line.startsWith('$')) {
+    return QByteArray();
+  }
+  return line.mid(3, 3);
+}
 }
 
 GpsPositionSource::GpsPositionSource(QObject *parent)
@@ -33,6 +45,9 @@ GpsPositionSource::GpsPositionSource(QObject *parent)
 
   connect(&m_pollTimer, &QTimer::timeout, this, &GpsPositionSource::pollPigpio);
   m_pollTimer.setInterval(kPollMs);
+
+  m_logRelevantNmea = envEnabled("BIKECOMPUTER_GPS_LOG_RELEVANT_NMEA");
+  m_logAllNmea = envEnabled("BIKECOMPUTER_GPS_LOG_ALL_NMEA");
 }
 
 GpsPositionSource::~GpsPositionSource() {
@@ -175,6 +190,10 @@ void GpsPositionSource::processBuffer() {
 }
 
 void GpsPositionSource::processNmeaLine(const QByteArray &line) {
+  if (m_logAllNmea || (m_logRelevantNmea && isRelevantNmeaSentence(line))) {
+    qInfo().noquote() << "NMEA:" << QString::fromLatin1(line);
+  }
+
   QGeoPositionInfo info;
   double speedKmh = 0.0;
   double courseDeg = 0.0;
@@ -196,9 +215,15 @@ void GpsPositionSource::processNmeaLine(const QByteArray &line) {
                     info.timestamp().toString(Qt::ISODate));
 }
 
+
+bool GpsPositionSource::isRelevantNmeaSentence(const QByteArray &line) {
+  const QByteArray type = sentenceType(line);
+  return type == "RMC" || type == "GGA" || type == "GSA" || type == "GSV";
+}
+
 bool GpsPositionSource::parseRmc(const QByteArray &line, QGeoPositionInfo &outInfo, double &speedKmh,
                                  double &courseDeg) const {
-  if (!line.startsWith("$GPRMC") && !line.startsWith("$GNRMC")) {
+  if (sentenceType(line) != "RMC") {
     return false;
   }
 

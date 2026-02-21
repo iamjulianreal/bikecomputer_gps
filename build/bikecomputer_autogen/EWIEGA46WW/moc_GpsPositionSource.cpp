@@ -70,7 +70,7 @@ static const uint qt_meta_data_GpsPositionSource[] = {
        0,       // classname
        0,    0, // classinfo
       10,   14, // methods
-       2,   88, // properties
+       6,   88, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -107,10 +107,18 @@ static const uint qt_meta_data_GpsPositionSource[] = {
  // properties: name, type, flags
       18, QMetaType::Bool, 0x00495103,
       19, QMetaType::Bool, 0x00495001,
+       8, QMetaType::Double, 0x00495001,
+       9, QMetaType::Double, 0x00495001,
+      10, QMetaType::Double, 0x00495001,
+      11, QMetaType::Double, 0x00495001,
 
  // properties: notify_signal_id
        0,
        1,
+       2,
+       2,
+       2,
+       2,
 
        0        // eod
 };
@@ -179,6 +187,10 @@ void GpsPositionSource::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: *reinterpret_cast< bool*>(_v) = _t->active(); break;
         case 1: *reinterpret_cast< bool*>(_v) = _t->valid(); break;
+        case 2: *reinterpret_cast< double*>(_v) = _t->latitude(); break;
+        case 3: *reinterpret_cast< double*>(_v) = _t->longitude(); break;
+        case 4: *reinterpret_cast< double*>(_v) = _t->speedKmh(); break;
+        case 5: *reinterpret_cast< double*>(_v) = _t->courseDeg(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
@@ -235,17 +247,17 @@ int GpsPositionSource::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyDesignable) {
-        _id -= 2;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyScriptable) {
-        _id -= 2;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyStored) {
-        _id -= 2;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyEditable) {
-        _id -= 2;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyUser) {
-        _id -= 2;
+        _id -= 6;
     }
 #endif // QT_NO_PROPERTIES
     return _id;

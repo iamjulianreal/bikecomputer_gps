@@ -19,9 +19,8 @@ Item {
     function haveFix() {
         return root.positionSource
             && root.positionSource.valid
-            && root.positionSource.position
-            && root.positionSource.position.coordinate
-            && root.positionSource.position.coordinate.isValid
+            && isFinite(root.positionSource.latitude)
+            && isFinite(root.positionSource.longitude)
     }
 
     function setView(lat, lon, zoom) {
@@ -38,8 +37,7 @@ Item {
             return
 
         if (haveFix()) {
-            var c = root.positionSource.position.coordinate
-            setView(c.latitude, c.longitude, root.startZoom)
+            setView(root.positionSource.latitude, root.positionSource.longitude, root.startZoom)
             root.fallbackUsed = false
         } else {
             setView(root.fallbackLat, root.fallbackLon, root.startZoom)
@@ -86,7 +84,7 @@ Item {
         visible: root.haveFix()
 
         rotation: root.haveFix()
-                  ? (root.positionSource.position.attribute(Position.Direction) || 0)
+                  ? (root.positionSource.courseDeg || 0)
                   : 0
 
         Rectangle {
@@ -140,8 +138,9 @@ Item {
             if (!root.follow)
                 return
 
-            var c = root.positionSource.position.coordinate
-            root.setView(c.latitude, c.longitude, map.view ? map.zoomLevel : root.startZoom)
+            root.setView(root.positionSource.latitude,
+                         root.positionSource.longitude,
+                         map.view ? map.zoomLevel : root.startZoom)
         }
     }
 

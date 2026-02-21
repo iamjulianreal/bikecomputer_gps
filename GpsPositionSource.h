@@ -10,6 +10,10 @@ class GpsPositionSource : public QGeoPositionInfoSource {
   Q_OBJECT
   Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
   Q_PROPERTY(bool valid READ valid NOTIFY validChanged)
+  Q_PROPERTY(double latitude READ latitude NOTIFY positionChanged)
+  Q_PROPERTY(double longitude READ longitude NOTIFY positionChanged)
+  Q_PROPERTY(double speedKmh READ speedKmh NOTIFY positionChanged)
+  Q_PROPERTY(double courseDeg READ courseDeg NOTIFY positionChanged)
 
 public:
   explicit GpsPositionSource(QObject *parent = nullptr);
@@ -26,6 +30,10 @@ public:
 
   bool active() const { return m_active; }
   bool valid() const { return m_valid; }
+  double latitude() const { return m_last.coordinate().latitude(); }
+  double longitude() const { return m_last.coordinate().longitude(); }
+  double speedKmh() const { return m_last.attribute(QGeoPositionInfo::GroundSpeed) * 3.6; }
+  double courseDeg() const { return m_last.attribute(QGeoPositionInfo::Direction); }
   void setActive(bool on);
 
 public slots:
@@ -45,6 +53,7 @@ private slots:
 
 private:
   bool openPigpio();
+  static bool isRelevantNmeaSentence(const QByteArray &line);
   void closePigpio();
   void processBuffer();
   void processNmeaLine(const QByteArray &line);
@@ -56,6 +65,9 @@ private:
   int m_rxPin = 13;
   int m_txPin = 12;
   int m_baud = 9600;
+
+  bool m_logRelevantNmea = false;
+  bool m_logAllNmea = false;
 
   QTimer m_pollTimer;
   QByteArray m_readBuffer;

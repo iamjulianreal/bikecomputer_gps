@@ -15,8 +15,8 @@ Item {
     function hasFix() {
         return root.positionSource
             && root.positionSource.valid
-            && root.positionSource.position
-            && root.positionSource.position.coordinate.isValid
+            && isFinite(root.positionSource.latitude)
+            && isFinite(root.positionSource.longitude)
     }
 
     Column {
@@ -38,8 +38,8 @@ Item {
             color: "white"
             text: {
                 if (hasFix()) {
-                    return "Lat: " + root.positionSource.position.coordinate.latitude.toFixed(6)
-                         + "\nLon: " + root.positionSource.position.coordinate.longitude.toFixed(6)
+                    return "Lat: " + root.positionSource.latitude.toFixed(6)
+                         + "\nLon: " + root.positionSource.longitude.toFixed(6)
                 }
                 return "Lat: " + root.fallbackLat.toFixed(6)
                      + "\nLon: " + root.fallbackLon.toFixed(6)
