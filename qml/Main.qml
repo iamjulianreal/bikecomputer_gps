@@ -83,6 +83,7 @@ ApplicationWindow {
         onTriggered: {
             if (win.okDown && !win.menuOpen) {
                 win.okLongFired = true
+                menu.index = 0
                 win.menuOpen = true
                 console.log("MENU OPEN (long press)")
             }
@@ -110,7 +111,9 @@ ApplicationWindow {
 
             if (down) {
                 win.okLongFired = false
-                okHoldTimer.start()
+                if (!win.menuOpen) {
+                    okHoldTimer.start()
+                }
             } else {
                 okHoldTimer.stop()
 

@@ -28,10 +28,6 @@ Item {
         mapController.setView(map, lat, lon, zoom)
     }
 
-
-
-
-
     function applyInitialView() {
         if (root.initialViewSet)
             return
@@ -58,7 +54,6 @@ Item {
         vehicleNoGpsSignalIconFile: ":/qml/icons/vehicle_not_fixed.svg"
         vehicleInTunnelIconFile: ":/qml/icons/vehicle_tunnel.svg"
 
-
         onDatabaseLoadedChanged: {
             if (databaseLoaded) {
                 Qt.callLater(root.applyInitialView)
@@ -66,13 +61,13 @@ Item {
         }
 
         Component.onCompleted: {
-    console.log("Map has view:", map.view)
-    if (map.view) {
-        console.log("view keys:", Object.keys(map.view))
-        console.log("view.toString:", map.view.toString())
-    }
-    if (map.databaseLoaded) Qt.callLater(root.applyInitialView)
-}
+            console.log("Map has view:", map.view)
+            if (map.view) {
+                console.log("view keys:", Object.keys(map.view))
+                console.log("view.toString:", map.view.toString())
+            }
+            if (map.databaseLoaded) Qt.callLater(root.applyInitialView)
+        }
 
     }
 

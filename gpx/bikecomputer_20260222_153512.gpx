@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="bikecomputer" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <name>Bike Activity</name>
+    <trkseg>
+      <trkpt lat="48.32124367" lon="16.05148833">
+        <time>2026-02-22T15:34:51Z</time>
+        <course>0.00</course>
+        <speed>0.203</speed>
+      </trkpt>
+      <trkpt lat="48.32124317" lon="16.05148500">
+        <time>2026-02-22T15:34:52Z</time>
+        <course>0.00</course>
+        <speed>0.111</speed>
+      </trkpt>
+      <trkpt lat="48.32124383" lon="16.05148283">
+        <time>2026-02-22T15:34:53Z</time>
+        <course>0.00</course>
+        <speed>0.120</speed>
+      </trkpt>
+      <trkpt lat="48.32124250" lon="16.05148050">
+        <time>2026-02-22T15:34:54Z</time>
+        <course>0.00</course>
+        <speed>0.140</speed>
+      </trkpt>
+      <trkpt lat="48.32124200" lon="16.05148117">
+        <time>2026-02-22T15:34:55Z</time>
+        <course>0.00</course>
+        <speed>0.088</speed>
+      </trkpt>
+      <trkpt lat="48.32124250" lon="16.05148550">
+        <time>2026-02-22T15:34:56Z</time>
+        <course>0.00</course>
+        <speed>0.204</speed>
+      </trkpt>
+      <trkpt lat="48.32124133" lon="16.05148700">
+        <time>2026-02-22T15:34:57Z</time>
+        <course>0.00</course>
+        <speed>0.133</speed>
+      </trkpt>
+      <trkpt lat="48.32123983" lon="16.05148950">
+        <time>2026-02-22T15:34:58Z</time>
+        <course>0.00</course>
+        <speed>0.274</speed>
+      </trkpt>
+      <trkpt lat="48.32123783" lon="16.05149100">
+        <time>2026-02-22T15:34:59Z</time>
+        <course>0.00</course>
+        <speed>0.144</speed>
+      </trkpt>
+      <trkpt lat="48.32123567" lon="16.05148650">
+        <time>2026-02-22T15:35:00Z</time>
+        <course>0.00</course>
+        <speed>0.270</speed>
+      </trkpt>
+      <trkpt lat="48.32123400" lon="16.05148567">
+        <time>2026-02-22T15:35:01Z</time>
+        <course>0.00</course>
+        <speed>0.088</speed>
+      </trkpt>
+      <trkpt lat="48.32123267" lon="16.05148750">
+        <time>2026-02-22T15:35:02Z</time>
+        <course>0.00</course>
+        <speed>0.060</speed>
+      </trkpt>
+      <trkpt lat="48.32123017" lon="16.05148617">
+        <time>2026-02-22T15:35:03Z</time>
+        <course>0.00</course>
+        <speed>0.142</speed>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

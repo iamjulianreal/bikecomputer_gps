@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    GpioReader btnUp("/dev/gpiochip0", 5);
+    GpioReader btnUp("/dev/gpiochip0", 16);
     GpioReader btnDown("/dev/gpiochip0", 6);
     GpioReader btnOk("/dev/gpiochip0", 26);
     GpxLogger gpxLogger;

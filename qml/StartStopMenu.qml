@@ -25,8 +25,9 @@ Rectangle {
                 height: 50
                 radius: 8
 
-                color: index === model.index ? "#00AEEF" : "#222222"
-                border.color: "white"
+                color: root.index === model.index ? "#00AEEF" : "#222222"
+                border.color: root.index === model.index ? "#FFFFFF" : "#777777"
+                border.width: root.index === model.index ? 3 : 1
 
                 Text {
                     anchors.centerIn: parent
