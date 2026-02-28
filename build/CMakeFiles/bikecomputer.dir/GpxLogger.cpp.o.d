@@ -1,7 +1,7 @@
 CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
- /home/julian/bikecomputers/codex_gps/GpxLogger.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp \
  /usr/include/stdc-predef.h \
- /home/julian/bikecomputers/codex_gps/GpxLogger.h \
+ /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \

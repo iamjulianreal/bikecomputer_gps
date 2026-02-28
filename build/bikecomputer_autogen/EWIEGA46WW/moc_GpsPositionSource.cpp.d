@@ -1,5 +1,5 @@
-/home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpsPositionSource.cpp: /home/julian/bikecomputers/codex_gps/GpsPositionSource.h \
-  /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/moc_predefs.h \
+/home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpsPositionSource.cpp: /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
+  /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/moc_predefs.h \
   /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/aarch64-linux-gnu/bits/confname.h \
   /usr/include/aarch64-linux-gnu/bits/cpu-set.h \

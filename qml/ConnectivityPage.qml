@@ -1,6 +1,5 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.7
-import QtPositioning 5.2
 
 Item {
     id: root
@@ -10,7 +9,7 @@ Item {
     property real fallbackLat: 48.207200
     property real fallbackLon: 15.618000
 
-    Rectangle { anchors.fill: parent; color: "black" }
+    Rectangle { anchors.fill: parent; color: "#0f1116" }
 
     function hasFix() {
         return root.positionSource
@@ -20,30 +19,43 @@ Item {
     }
 
     Column {
-        anchors.centerIn: parent
-        spacing: 8
+        anchors.fill: parent
+        anchors.margins: 14
+        spacing: 10
 
-        Text {
-            color: "white"
-            font.pixelSize: 20
-            text: hasFix() ? "GPS: FIX" : "GPS: NO FIX (Fallback HTL)"
-        }
+        Rectangle {
+            width: parent.width
+            height: 52
+            radius: 8
+            color: "#1c2230"
+            border.color: hasFix() ? "#2ecc71" : "#e74c3c"
 
-        Text {
-            color: "white"
-            text: "sourceError: " + (root.positionSource ? root.positionSource.sourceError : "n/a")
-        }
-
-        Text {
-            color: "white"
-            text: {
-                if (hasFix()) {
-                    return "Lat: " + root.positionSource.latitude.toFixed(6)
-                         + "\nLon: " + root.positionSource.longitude.toFixed(6)
-                }
-                return "Lat: " + root.fallbackLat.toFixed(6)
-                     + "\nLon: " + root.fallbackLon.toFixed(6)
+            Text {
+                anchors.centerIn: parent
+                color: "white"
+                font.pixelSize: 22
+                font.bold: true
+                text: hasFix() ? "GPS FIX" : "KEIN GPS FIX"
             }
         }
+
+        Rectangle {
+            width: parent.width
+            height: 62
+            radius: 8
+            color: "#1c2230"
+            border.color: "#2b3344"
+            Text {
+                anchors.centerIn: parent
+                color: "#cfd6e6"
+                font.pixelSize: 16
+                horizontalAlignment: Text.AlignHCenter
+                text: (batteryMonitor.available
+                      ? ("AKKU: " + batteryMonitor.percent + " %")
+                      : "AKKU: -- %")
+                      + "\nLICHT: " + backlightController.brightness + " %"
+            }
+        }
+
     }
 }

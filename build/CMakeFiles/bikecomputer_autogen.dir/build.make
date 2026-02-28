@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julian/bikecomputers/codex_gps
+CMAKE_SOURCE_DIR = /home/julian/bikecomputers/bikecomputer_gps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julian/bikecomputers/codex_gps/build
+CMAKE_BINARY_DIR = /home/julian/bikecomputers/bikecomputer_gps/build
 
 # Utility rule file for bikecomputer_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/bikecomputer_autogen: bikecomputer_autogen/timestamp
 
 bikecomputer_autogen/timestamp: /usr/lib/qt5/bin/moc
 bikecomputer_autogen/timestamp: CMakeFiles/bikecomputer_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bikecomputer"
-	/usr/bin/cmake -E cmake_autogen /home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bikecomputer"
+	/usr/bin/cmake -E cmake_autogen /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/timestamp
 
 CMakeFiles/bikecomputer_autogen.dir/codegen:
 .PHONY : CMakeFiles/bikecomputer_autogen.dir/codegen
@@ -91,6 +91,6 @@ CMakeFiles/bikecomputer_autogen.dir/clean:
 .PHONY : CMakeFiles/bikecomputer_autogen.dir/clean
 
 CMakeFiles/bikecomputer_autogen.dir/depend:
-	cd /home/julian/bikecomputers/codex_gps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julian/bikecomputers/codex_gps /home/julian/bikecomputers/codex_gps /home/julian/bikecomputers/codex_gps/build /home/julian/bikecomputers/codex_gps/build /home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/julian/bikecomputers/bikecomputer_gps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julian/bikecomputers/bikecomputer_gps /home/julian/bikecomputers/bikecomputer_gps /home/julian/bikecomputers/bikecomputer_gps/build /home/julian/bikecomputers/bikecomputer_gps/build /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bikecomputer_autogen.dir/depend
 

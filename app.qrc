@@ -5,7 +5,7 @@
     <file>qml/DataPage.qml</file>
     <file>qml/ConnectivityPage.qml</file>
     <file>qml/StartStopMenu.qml</file>
-     <file>qml/icons/vehicle.svg</file>
+    <file>qml/icons/vehicle.svg</file>
   <file>qml/icons/vehicle_not_fixed.svg</file>
   <file>qml/icons/vehicle_tunnel.svg</file>
   </qresource>

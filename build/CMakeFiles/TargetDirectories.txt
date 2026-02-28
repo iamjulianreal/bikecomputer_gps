@@ -1,5 +1,5 @@
-/home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer.dir
-/home/julian/bikecomputers/codex_gps/build/CMakeFiles/edit_cache.dir
-/home/julian/bikecomputers/codex_gps/build/CMakeFiles/rebuild_cache.dir
-/home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen_timestamp_deps.dir
-/home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen.dir
+/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer.dir
+/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/edit_cache.dir
+/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/rebuild_cache.dir
+/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen_timestamp_deps.dir
+/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen.dir

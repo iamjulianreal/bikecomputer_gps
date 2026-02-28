@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julian/bikecomputers/codex_gps
+CMAKE_SOURCE_DIR = /home/julian/bikecomputers/bikecomputer_gps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julian/bikecomputers/codex_gps/build
+CMAKE_BINARY_DIR = /home/julian/bikecomputers/bikecomputer_gps/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julian/bikecomputers/codex_gps/build/CMakeFiles /home/julian/bikecomputers/codex_gps/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles /home/julian/bikecomputers/bikecomputer_gps/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/julian/bikecomputers/codex_gps/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +154,54 @@ bikecomputer_autogen: cmake_check_build_system
 bikecomputer_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer_autogen.dir/build.make CMakeFiles/bikecomputer_autogen.dir/build
 .PHONY : bikecomputer_autogen/fast
+
+BacklightController.o: BacklightController.cpp.o
+.PHONY : BacklightController.o
+
+# target to build an object file
+BacklightController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/BacklightController.cpp.o
+.PHONY : BacklightController.cpp.o
+
+BacklightController.i: BacklightController.cpp.i
+.PHONY : BacklightController.i
+
+# target to preprocess a source file
+BacklightController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/BacklightController.cpp.i
+.PHONY : BacklightController.cpp.i
+
+BacklightController.s: BacklightController.cpp.s
+.PHONY : BacklightController.s
+
+# target to generate assembly for a file
+BacklightController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/BacklightController.cpp.s
+.PHONY : BacklightController.cpp.s
+
+BatteryMonitor.o: BatteryMonitor.cpp.o
+.PHONY : BatteryMonitor.o
+
+# target to build an object file
+BatteryMonitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o
+.PHONY : BatteryMonitor.cpp.o
+
+BatteryMonitor.i: BatteryMonitor.cpp.i
+.PHONY : BatteryMonitor.i
+
+# target to preprocess a source file
+BatteryMonitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.i
+.PHONY : BatteryMonitor.cpp.i
+
+BatteryMonitor.s: BatteryMonitor.cpp.s
+.PHONY : BatteryMonitor.s
+
+# target to generate assembly for a file
+BatteryMonitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.s
+.PHONY : BatteryMonitor.cpp.s
 
 GpsPositionSource.o: GpsPositionSource.cpp.o
 .PHONY : GpsPositionSource.o
@@ -310,6 +358,12 @@ help:
 	@echo "... bikecomputer_autogen"
 	@echo "... bikecomputer_autogen_timestamp_deps"
 	@echo "... bikecomputer"
+	@echo "... BacklightController.o"
+	@echo "... BacklightController.i"
+	@echo "... BacklightController.s"
+	@echo "... BatteryMonitor.o"
+	@echo "... BatteryMonitor.i"
+	@echo "... BatteryMonitor.s"
 	@echo "... GpsPositionSource.o"
 	@echo "... GpsPositionSource.i"
 	@echo "... GpsPositionSource.s"

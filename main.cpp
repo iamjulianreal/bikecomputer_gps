@@ -9,6 +9,8 @@
 #include "GpxLogger.h"
 #include "gpio_reader.h"
 #include "MapController.h"
+#include "BacklightController.h"
+#include "BatteryMonitor.h"
 
 int main(int argc, char *argv[])
 {
@@ -41,6 +43,8 @@ int main(int argc, char *argv[])
     GpioReader btnDown("/dev/gpiochip0", 6);
     GpioReader btnOk("/dev/gpiochip0", 26);
     GpxLogger gpxLogger;
+    BacklightController backlightController;
+    BatteryMonitor batteryMonitor;
 
     QQmlApplicationEngine engine;
 
@@ -54,6 +58,8 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("btnDown", &btnDown);
     engine.rootContext()->setContextProperty("btnOk", &btnOk);
     engine.rootContext()->setContextProperty("gpxLogger", &gpxLogger);
+    engine.rootContext()->setContextProperty("backlightController", &backlightController);
+    engine.rootContext()->setContextProperty("batteryMonitor", &batteryMonitor);
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/Main.qml")));
 

@@ -1,7 +1,7 @@
 CMakeFiles/bikecomputer.dir/MapController.cpp.o: \
- /home/julian/bikecomputers/codex_gps/MapController.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp \
  /usr/include/stdc-predef.h \
- /home/julian/bikecomputers/codex_gps/MapController.h \
+ /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \

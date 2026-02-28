@@ -1,5 +1,6 @@
 CMakeFiles/bikecomputer.dir/main.cpp.o: \
- /home/julian/bikecomputers/codex_gps/main.cpp /usr/include/stdc-predef.h \
+ /home/julian/bikecomputers/bikecomputer_gps/main.cpp \
+ /usr/include/stdc-predef.h \
  /usr/include/aarch64-linux-gnu/qt5/QtGui/QGuiApplication \
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qguiapplication.h \
  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h \
@@ -736,7 +737,7 @@ CMakeFiles/bikecomputer.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
  /usr/local/include/osmscoutclientqt/OsmTileDownloader.h \
  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkRequest \
- /home/julian/bikecomputers/codex_gps/GpsPositionSource.h \
+ /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
@@ -746,10 +747,12 @@ CMakeFiles/bikecomputer.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
- /home/julian/bikecomputers/codex_gps/GpxLogger.h \
+ /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
- /home/julian/bikecomputers/codex_gps/gpio_reader.h \
+ /home/julian/bikecomputers/bikecomputer_gps/gpio_reader.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsocketnotifier.h \
  /usr/include/gpiod.h /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
- /home/julian/bikecomputers/codex_gps/MapController.h
+ /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
+ /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
+ /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h

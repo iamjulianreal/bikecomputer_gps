@@ -7,6 +7,8 @@ bikecomputer: \
   CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o \
   CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o \
   CMakeFiles/bikecomputer.dir/MapController.cpp.o \
+  CMakeFiles/bikecomputer.dir/BacklightController.cpp.o \
+  CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o \
   CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o \
   /usr/lib/aarch64-linux-gnu/libQt5Quick.so.5.15.15 \
   /usr/lib/aarch64-linux-gnu/libQt5Positioning.so.5.15.15 \
@@ -118,6 +120,10 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
 
 CMakeFiles/bikecomputer.dir/MapController.cpp.o:
+
+CMakeFiles/bikecomputer.dir/BacklightController.cpp.o:
+
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o:
 
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o:
 

@@ -1,11 +1,11 @@
-CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
- /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp \
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o: \
+ /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp \
  /usr/include/stdc-predef.h \
- /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
+ /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/c++/14/type_traits \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
@@ -99,6 +99,7 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
@@ -160,7 +161,11 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/14/stdlib.h \
@@ -220,19 +225,12 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
  /usr/include/c++/14/bits/cxxabi_init_exception.h \
  /usr/include/c++/14/typeinfo /usr/include/c++/14/bits/nested_exception.h \
  /usr/include/c++/14/bits/streambuf.tcc \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
  /usr/include/c++/14/numeric /usr/include/c++/14/bits/stl_numeric.h \
@@ -259,11 +257,7 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
@@ -285,25 +279,9 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
  /usr/include/c++/14/bits/shared_ptr_atomic.h \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/bits/ranges_uninitialized.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
- /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
- /usr/include/c++/14/bits/stl_map.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h /usr/include/c++/14/map \
+ /usr/include/c++/14/bits/stl_tree.h /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
  /usr/include/c++/14/ratio /usr/include/c++/14/ctime \
@@ -323,19 +301,34 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: \
  /usr/include/c++/14/span /usr/include/c++/14/variant \
  /usr/include/c++/14/bits/unicode.h \
  /usr/include/c++/14/bits/unicode-data.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
- /usr/local/include/pigpiod_if2.h /usr/local/include/pigpio.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h /usr/include/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+ /usr/include/linux/i2c-dev.h /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+ /usr/include/aarch64-linux-gnu/bits/ioctls.h \
+ /usr/lib/linux/uapi/arm64/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/lib/linux/uapi/arm64/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/aarch64-linux-gnu/sys/ttydefaults.h

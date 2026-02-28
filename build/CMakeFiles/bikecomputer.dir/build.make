@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julian/bikecomputers/codex_gps
+CMAKE_SOURCE_DIR = /home/julian/bikecomputers/bikecomputer_gps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julian/bikecomputers/codex_gps/build
+CMAKE_BINARY_DIR = /home/julian/bikecomputers/bikecomputer_gps/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bikecomputer.dir/depend.make
@@ -71,24 +71,24 @@ include CMakeFiles/bikecomputer.dir/flags.make
 
 bikecomputer_autogen/timestamp: /usr/lib/qt5/bin/moc
 bikecomputer_autogen/timestamp: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bikecomputer"
-	/usr/bin/cmake -E cmake_autogen /home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bikecomputer"
+	/usr/bin/cmake -E cmake_autogen /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/timestamp
 
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/app.qrc
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/app.qrc
 bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: CMakeFiles/bikecomputer_autogen.dir/AutoRcc_app_EWIEGA46WW_Info.json
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/MapPage.qml
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/DataPage.qml
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/ConnectivityPage.qml
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/Main.qml
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/StartStopMenu.qml
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/icons/vehicle_not_fixed.svg
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/icons/vehicle.svg
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/codex_gps/qml/icons/vehicle_tunnel.svg
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/MapPage.qml
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/DataPage.qml
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/ConnectivityPage.qml
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/Main.qml
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/StartStopMenu.qml
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/icons/vehicle_not_fixed.svg
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/icons/vehicle.svg
+bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /home/julian/bikecomputers/bikecomputer_gps/qml/icons/vehicle_tunnel.svg
 bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /usr/lib/qt5/bin/rcc
 bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp: /usr/lib/qt5/bin/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for app.qrc"
-	/usr/bin/cmake -E cmake_autorcc /home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen.dir/AutoRcc_app_EWIEGA46WW_Info.json 
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for app.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen.dir/AutoRcc_app_EWIEGA46WW_Info.json 
 
 CMakeFiles/bikecomputer.dir/codegen:
 .PHONY : CMakeFiles/bikecomputer.dir/codegen
@@ -96,86 +96,114 @@ CMakeFiles/bikecomputer.dir/codegen:
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: bikecomputer_autogen/mocs_compilation.cpp
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o -MF CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o -c /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o -MF CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/mocs_compilation.cpp
 
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/mocs_compilation.cpp > CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/mocs_compilation.cpp > CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/mocs_compilation.cpp -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/mocs_compilation.cpp -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/bikecomputer.dir/main.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
-CMakeFiles/bikecomputer.dir/main.cpp.o: /home/julian/bikecomputers/codex_gps/main.cpp
+CMakeFiles/bikecomputer.dir/main.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/main.cpp
 CMakeFiles/bikecomputer.dir/main.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bikecomputer.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/main.cpp.o -MF CMakeFiles/bikecomputer.dir/main.cpp.o.d -o CMakeFiles/bikecomputer.dir/main.cpp.o -c /home/julian/bikecomputers/codex_gps/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bikecomputer.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/main.cpp.o -MF CMakeFiles/bikecomputer.dir/main.cpp.o.d -o CMakeFiles/bikecomputer.dir/main.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/main.cpp
 
 CMakeFiles/bikecomputer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/codex_gps/main.cpp > CMakeFiles/bikecomputer.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/main.cpp > CMakeFiles/bikecomputer.dir/main.cpp.i
 
 CMakeFiles/bikecomputer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/codex_gps/main.cpp -o CMakeFiles/bikecomputer.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/main.cpp -o CMakeFiles/bikecomputer.dir/main.cpp.s
 
 CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
-CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: /home/julian/bikecomputers/codex_gps/GpsPositionSource.cpp
+CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp
 CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o -MF CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o.d -o CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o -c /home/julian/bikecomputers/codex_gps/GpsPositionSource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o -MF CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o.d -o CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp
 
 CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/codex_gps/GpsPositionSource.cpp > CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp > CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.i
 
 CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/codex_gps/GpsPositionSource.cpp -o CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp -o CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.s
 
 CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
-CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: /home/julian/bikecomputers/codex_gps/GpxLogger.cpp
+CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp
 CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o -MF CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o.d -o CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o -c /home/julian/bikecomputers/codex_gps/GpxLogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o -MF CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o.d -o CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp
 
 CMakeFiles/bikecomputer.dir/GpxLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/GpxLogger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/codex_gps/GpxLogger.cpp > CMakeFiles/bikecomputer.dir/GpxLogger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp > CMakeFiles/bikecomputer.dir/GpxLogger.cpp.i
 
 CMakeFiles/bikecomputer.dir/GpxLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/GpxLogger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/codex_gps/GpxLogger.cpp -o CMakeFiles/bikecomputer.dir/GpxLogger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp -o CMakeFiles/bikecomputer.dir/GpxLogger.cpp.s
 
 CMakeFiles/bikecomputer.dir/MapController.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
-CMakeFiles/bikecomputer.dir/MapController.cpp.o: /home/julian/bikecomputers/codex_gps/MapController.cpp
+CMakeFiles/bikecomputer.dir/MapController.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp
 CMakeFiles/bikecomputer.dir/MapController.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/bikecomputer.dir/MapController.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/MapController.cpp.o -MF CMakeFiles/bikecomputer.dir/MapController.cpp.o.d -o CMakeFiles/bikecomputer.dir/MapController.cpp.o -c /home/julian/bikecomputers/codex_gps/MapController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/bikecomputer.dir/MapController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/MapController.cpp.o -MF CMakeFiles/bikecomputer.dir/MapController.cpp.o.d -o CMakeFiles/bikecomputer.dir/MapController.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp
 
 CMakeFiles/bikecomputer.dir/MapController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/MapController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/codex_gps/MapController.cpp > CMakeFiles/bikecomputer.dir/MapController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp > CMakeFiles/bikecomputer.dir/MapController.cpp.i
 
 CMakeFiles/bikecomputer.dir/MapController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/MapController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/codex_gps/MapController.cpp -o CMakeFiles/bikecomputer.dir/MapController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp -o CMakeFiles/bikecomputer.dir/MapController.cpp.s
+
+CMakeFiles/bikecomputer.dir/BacklightController.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
+CMakeFiles/bikecomputer.dir/BacklightController.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp
+CMakeFiles/bikecomputer.dir/BacklightController.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/bikecomputer.dir/BacklightController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/BacklightController.cpp.o -MF CMakeFiles/bikecomputer.dir/BacklightController.cpp.o.d -o CMakeFiles/bikecomputer.dir/BacklightController.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp
+
+CMakeFiles/bikecomputer.dir/BacklightController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/BacklightController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp > CMakeFiles/bikecomputer.dir/BacklightController.cpp.i
+
+CMakeFiles/bikecomputer.dir/BacklightController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/BacklightController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp -o CMakeFiles/bikecomputer.dir/BacklightController.cpp.s
+
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o -MF CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o.d -o CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp
+
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp > CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.i
+
+CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp -o CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.s
 
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o: CMakeFiles/bikecomputer.dir/flags.make
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o: bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o: CMakeFiles/bikecomputer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o -MF CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o.d -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o -c /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o -MF CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o.d -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o -c /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp
 
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp > CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp > CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.i
 
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp -o CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.s
 
 # Object files for target bikecomputer
 bikecomputer_OBJECTS = \
@@ -184,6 +212,8 @@ bikecomputer_OBJECTS = \
 "CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o" \
 "CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o" \
 "CMakeFiles/bikecomputer.dir/MapController.cpp.o" \
+"CMakeFiles/bikecomputer.dir/BacklightController.cpp.o" \
+"CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o" \
 "CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o"
 
 # External object files for target bikecomputer
@@ -194,6 +224,8 @@ bikecomputer: CMakeFiles/bikecomputer.dir/main.cpp.o
 bikecomputer: CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o
 bikecomputer: CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o
 bikecomputer: CMakeFiles/bikecomputer.dir/MapController.cpp.o
+bikecomputer: CMakeFiles/bikecomputer.dir/BacklightController.cpp.o
+bikecomputer: CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o
 bikecomputer: CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o
 bikecomputer: CMakeFiles/bikecomputer.dir/build.make
 bikecomputer: CMakeFiles/bikecomputer.dir/compiler_depend.ts
@@ -207,7 +239,7 @@ bikecomputer: /usr/lib/aarch64-linux-gnu/libQt5Qml.so.5.15.15
 bikecomputer: /usr/lib/aarch64-linux-gnu/libQt5Network.so.5.15.15
 bikecomputer: /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.15.15
 bikecomputer: CMakeFiles/bikecomputer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/julian/bikecomputers/codex_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable bikecomputer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable bikecomputer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bikecomputer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -220,6 +252,6 @@ CMakeFiles/bikecomputer.dir/clean:
 
 CMakeFiles/bikecomputer.dir/depend: bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp
 CMakeFiles/bikecomputer.dir/depend: bikecomputer_autogen/timestamp
-	cd /home/julian/bikecomputers/codex_gps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julian/bikecomputers/codex_gps /home/julian/bikecomputers/codex_gps /home/julian/bikecomputers/codex_gps/build /home/julian/bikecomputers/codex_gps/build /home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/julian/bikecomputers/bikecomputer_gps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julian/bikecomputers/bikecomputer_gps /home/julian/bikecomputers/bikecomputer_gps /home/julian/bikecomputers/bikecomputer_gps/build /home/julian/bikecomputers/bikecomputer_gps/build /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bikecomputer.dir/depend
 

@@ -14,6 +14,7 @@ ApplicationWindow {
     property bool menuOpen: false
     property bool okDown: false
     property bool okLongFired: false
+    property bool connectivityBrightnessMode: false
 
     property real fallbackLat: 48.207200
     property real fallbackLon: 15.618000
@@ -34,8 +35,6 @@ ApplicationWindow {
         anchors.fill: parent
         visible: win.pageIndex === 0
         positionSource: gps
-        fallbackLat: win.fallbackLat
-        fallbackLon: win.fallbackLon
     }
 
     DataPage {
@@ -50,8 +49,6 @@ ApplicationWindow {
         anchors.fill: parent
         visible: win.pageIndex === 2
         positionSource: gps
-        fallbackLat: win.fallbackLat
-        fallbackLon: win.fallbackLon
     }
 
     StartStopMenu {
@@ -92,16 +89,23 @@ ApplicationWindow {
 
     function nextPage() {
         win.pageIndex = (win.pageIndex + 1) % 3
+        if (win.pageIndex !== 2) win.connectivityBrightnessMode = false
     }
 
     function prevPage() {
         win.pageIndex = (win.pageIndex + 2) % 3
+        if (win.pageIndex !== 2) win.connectivityBrightnessMode = false
     }
 
     function toggleMapZoomMode() {
         if (win.pageIndex !== 0) return
         win.mode = (win.mode === "MAP_ZOOM") ? "NAV" : "MAP_ZOOM"
         mapPage.setZoomMode(win.mode === "MAP_ZOOM")
+    }
+
+    function toggleConnectivityBrightnessMode() {
+        if (win.pageIndex !== 2) return
+        win.connectivityBrightnessMode = !win.connectivityBrightnessMode
     }
 
     Connections {
@@ -124,7 +128,11 @@ ApplicationWindow {
                     return
                 }
 
-                win.toggleMapZoomMode()
+                if (win.pageIndex === 0) {
+                    win.toggleMapZoomMode()
+                } else if (win.pageIndex === 2) {
+                    win.toggleConnectivityBrightnessMode()
+                }
             }
         }
     }
@@ -134,8 +142,13 @@ ApplicationWindow {
         function onPressed() {
             if (win.menuOpen) { menu.up(); return }
 
-            if (win.pageIndex === 0 && win.mode === "MAP_ZOOM") mapPage.zoomIn()
-            else win.prevPage()
+            if (win.pageIndex === 0 && win.mode === "MAP_ZOOM") {
+                mapPage.zoomIn()
+            } else if (win.pageIndex === 2 && win.connectivityBrightnessMode) {
+                backlightController.increase()
+            } else {
+                win.prevPage()
+            }
         }
     }
 
@@ -144,8 +157,13 @@ ApplicationWindow {
         function onPressed() {
             if (win.menuOpen) { menu.down(); return }
 
-            if (win.pageIndex === 0 && win.mode === "MAP_ZOOM") mapPage.zoomOut()
-            else win.nextPage()
+            if (win.pageIndex === 0 && win.mode === "MAP_ZOOM") {
+                mapPage.zoomOut()
+            } else if (win.pageIndex === 2 && win.connectivityBrightnessMode) {
+                backlightController.decrease()
+            } else {
+                win.nextPage()
+            }
         }
     }
 

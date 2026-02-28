@@ -1,4 +1,4 @@
-/home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpxLogger.cpp: /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
+/home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_BacklightController.cpp: /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
   /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/moc_predefs.h \
   /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/aarch64-linux-gnu/bits/confname.h \
@@ -66,9 +66,8 @@
   /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
@@ -81,12 +80,10 @@
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
@@ -103,7 +100,6 @@
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \

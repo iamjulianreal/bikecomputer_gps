@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/julian/bikecomputers/codex_gps
+CMAKE_SOURCE_DIR = /home/julian/bikecomputers/bikecomputer_gps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/julian/bikecomputers/codex_gps/build
+CMAKE_BINARY_DIR = /home/julian/bikecomputers/bikecomputer_gps/build
 
 # Utility rule file for bikecomputer_autogen_timestamp_deps.
 
@@ -81,6 +81,6 @@ CMakeFiles/bikecomputer_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/bikecomputer_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/bikecomputer_autogen_timestamp_deps.dir/depend:
-	cd /home/julian/bikecomputers/codex_gps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julian/bikecomputers/codex_gps /home/julian/bikecomputers/codex_gps /home/julian/bikecomputers/codex_gps/build /home/julian/bikecomputers/codex_gps/build /home/julian/bikecomputers/codex_gps/build/CMakeFiles/bikecomputer_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/julian/bikecomputers/bikecomputer_gps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/julian/bikecomputers/bikecomputer_gps /home/julian/bikecomputers/bikecomputer_gps /home/julian/bikecomputers/bikecomputer_gps/build /home/julian/bikecomputers/bikecomputer_gps/build /home/julian/bikecomputers/bikecomputer_gps/build/CMakeFiles/bikecomputer_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bikecomputer_autogen_timestamp_deps.dir/depend
 

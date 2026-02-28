@@ -1,7 +1,7 @@
 CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/mocs_compilation.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpsPositionSource.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_BacklightController.cpp \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/memoryfwd.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -204,11 +204,11 @@ CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../GpsPositionSource.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../BacklightController.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
  /usr/include/assert.h \
@@ -227,6 +227,7 @@ CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
@@ -234,24 +235,21 @@ CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/14/stdlib.h /usr/include/c++/14/iterator \
  /usr/include/c++/14/bits/stream_iterator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
  /usr/include/c++/14/numeric /usr/include/c++/14/bits/stl_numeric.h \
@@ -275,32 +273,13 @@ CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
- /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
  /usr/include/c++/14/ratio /usr/include/c++/14/ctime \
@@ -320,20 +299,45 @@ CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/14/span /usr/include/c++/14/variant \
  /usr/include/c++/14/bits/unicode.h \
  /usr/include/c++/14/bits/unicode-data.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_BatteryMonitor.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../BatteryMonitor.h \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpsPositionSource.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../GpsPositionSource.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpxLogger.cpp \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../GpxLogger.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_GpxLogger.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../GpxLogger.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_MapController.cpp \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../MapController.h \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_gpio_reader.cpp \
- /home/julian/bikecomputers/codex_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../gpio_reader.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_MapController.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../MapController.h \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_gpio_reader.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../gpio_reader.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsocketnotifier.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer \

@@ -20,6 +20,10 @@ add_executable(bikecomputer
   GpxLogger.h
   MapController.h
   MapController.cpp
+  BacklightController.cpp
+  BacklightController.h
+  BatteryMonitor.cpp
+  BatteryMonitor.h
 )
 
 # libgpiod
