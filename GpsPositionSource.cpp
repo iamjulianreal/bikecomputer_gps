@@ -2,6 +2,7 @@
 
 #include <QDebug>
 #include <array>
+#include <limits>
 
 #if __has_include(<pigpiod_if2.h>)
 #include <pigpiod_if2.h>
@@ -194,11 +195,30 @@ void GpsPositionSource::processNmeaLine(const QByteArray &line) {
     qInfo().noquote() << "NMEA:" << QString::fromLatin1(line);
   }
 
+  double altitudeMeters = 0.0;
+  if (parseGgaAltitude(line, altitudeMeters)) {
+    m_lastAltitudeMeters = altitudeMeters;
+    m_hasAltitude = true;
+
+    if (m_valid && m_last.coordinate().isValid()) {
+      const QGeoCoordinate current = m_last.coordinate();
+      m_last.setCoordinate(QGeoCoordinate(current.latitude(), current.longitude(), m_lastAltitudeMeters));
+      emit positionChanged();
+    }
+  }
+
   QGeoPositionInfo info;
   double speedKmh = 0.0;
   double courseDeg = 0.0;
 
-  if (!parseRmc(line, info, speedKmh, courseDeg)) {
+  bool hasFix = parseRmc(line, info, speedKmh, courseDeg);
+  if (!hasFix) {
+    hasFix = parseGgaPosition(line, info);
+    speedKmh = 0.0;
+    courseDeg = 0.0;
+  }
+
+  if (!hasFix) {
     return;
   }
 
@@ -278,9 +298,79 @@ bool GpsPositionSource::parseRmc(const QByteArray &line, QGeoPositionInfo &outIn
     return false;
   }
 
-  outInfo = QGeoPositionInfo(coordinate, timestamp);
+  const double altitude = m_hasAltitude ? m_lastAltitudeMeters : std::numeric_limits<double>::quiet_NaN();
+  outInfo = QGeoPositionInfo(QGeoCoordinate(latitude, longitude, altitude), timestamp);
   outInfo.setAttribute(QGeoPositionInfo::GroundSpeed, speedKmh / 3.6);
   outInfo.setAttribute(QGeoPositionInfo::Direction, courseDeg);
+  return true;
+}
+
+bool GpsPositionSource::parseGgaPosition(const QByteArray &line, QGeoPositionInfo &outInfo) const {
+  if (sentenceType(line) != "GGA") {
+    return false;
+  }
+
+  const QList<QByteArray> fields = line.split(',');
+  if (fields.size() < 10) {
+    return false;
+  }
+
+  bool fixOk = false;
+  const int fixQuality = fields.at(6).toInt(&fixOk);
+  if (!fixOk || fixQuality <= 0) {
+    return false;
+  }
+
+  double latitude = 0.0;
+  double longitude = 0.0;
+  if (!parseLatitude(fields.at(2), fields.at(3), latitude) ||
+      !parseLongitude(fields.at(4), fields.at(5), longitude)) {
+    return false;
+  }
+
+  const double altitude = m_hasAltitude ? m_lastAltitudeMeters : std::numeric_limits<double>::quiet_NaN();
+  const QGeoCoordinate coordinate(latitude, longitude, altitude);
+  if (!coordinate.isValid()) {
+    return false;
+  }
+
+  QDateTime timestamp = QDateTime::currentDateTimeUtc();
+  const QByteArray timeRaw = fields.at(1);
+  if (timeRaw.size() >= 6) {
+    const int hour = timeRaw.mid(0, 2).toInt();
+    const int minute = timeRaw.mid(2, 2).toInt();
+    const int second = timeRaw.mid(4, 2).toInt();
+
+    const QDate currentDate = QDate::currentDate();
+    const QTime time(hour, minute, second);
+    if (time.isValid()) {
+      timestamp = QDateTime(currentDate, time, Qt::UTC);
+    }
+  }
+
+  outInfo = QGeoPositionInfo(coordinate, timestamp);
+  outInfo.setAttribute(QGeoPositionInfo::GroundSpeed, 0.0);
+  outInfo.setAttribute(QGeoPositionInfo::Direction, 0.0);
+  return true;
+}
+
+bool GpsPositionSource::parseGgaAltitude(const QByteArray &line, double &altitudeMeters) const {
+  if (sentenceType(line) != "GGA") {
+    return false;
+  }
+
+  const QList<QByteArray> fields = line.split(',');
+  if (fields.size() < 10) {
+    return false;
+  }
+
+  bool altOk = false;
+  const double altitude = fields.at(9).toDouble(&altOk);
+  if (!altOk) {
+    return false;
+  }
+
+  altitudeMeters = altitude;
   return true;
 }
 

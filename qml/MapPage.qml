@@ -18,7 +18,6 @@ Item {
 
     function haveFix() {
         return root.positionSource
-            && root.positionSource.valid
             && isFinite(root.positionSource.latitude)
             && isFinite(root.positionSource.longitude)
     }
@@ -78,9 +77,12 @@ Item {
         anchors.centerIn: parent
         visible: root.haveFix()
 
-        rotation: root.haveFix()
-                  ? (root.positionSource.courseDeg || 0)
-                  : 0
+        rotation: {
+            if (!root.positionSource)
+                return 0
+            var d = root.positionSource.courseDeg
+            return isNaN(d) ? 0 : d
+        }
 
         Rectangle {
             anchors.centerIn: parent
@@ -135,7 +137,7 @@ Item {
 
             root.setView(root.positionSource.latitude,
                          root.positionSource.longitude,
-                         map.view ? map.zoomLevel : root.startZoom)
+                         root.startZoom)
         }
     }
 

@@ -14,6 +14,7 @@ class GpsPositionSource : public QGeoPositionInfoSource {
   Q_PROPERTY(double longitude READ longitude NOTIFY positionChanged)
   Q_PROPERTY(double speedKmh READ speedKmh NOTIFY positionChanged)
   Q_PROPERTY(double courseDeg READ courseDeg NOTIFY positionChanged)
+  Q_PROPERTY(double altitudeMeters READ altitudeMeters NOTIFY positionChanged)
 
 public:
   explicit GpsPositionSource(QObject *parent = nullptr);
@@ -23,7 +24,7 @@ public:
   Error error() const override;
 
   PositioningMethods supportedPositioningMethods() const override {
-    return QGeoPositionInfoSource::SatellitePositioningMethods;
+    return QGeoPositionInfoSource::AllPositioningMethods;
   }
 
   int minimumUpdateInterval() const override { return 200; }
@@ -34,6 +35,7 @@ public:
   double longitude() const { return m_last.coordinate().longitude(); }
   double speedKmh() const { return m_last.attribute(QGeoPositionInfo::GroundSpeed) * 3.6; }
   double courseDeg() const { return m_last.attribute(QGeoPositionInfo::Direction); }
+  double altitudeMeters() const { return m_last.coordinate().altitude(); }
   void setActive(bool on);
 
 public slots:
@@ -58,6 +60,8 @@ private:
   void processBuffer();
   void processNmeaLine(const QByteArray &line);
   bool parseRmc(const QByteArray &line, QGeoPositionInfo &outInfo, double &speedKmh, double &courseDeg) const;
+  bool parseGgaPosition(const QByteArray &line, QGeoPositionInfo &outInfo) const;
+  bool parseGgaAltitude(const QByteArray &line, double &altitudeMeters) const;
   static bool parseLatitude(const QByteArray &value, const QByteArray &hemi, double &out);
   static bool parseLongitude(const QByteArray &value, const QByteArray &hemi, double &out);
 
@@ -68,6 +72,8 @@ private:
 
   bool m_logRelevantNmea = false;
   bool m_logAllNmea = false;
+  double m_lastAltitudeMeters = 0.0;
+  bool m_hasAltitude = false;
 
   QTimer m_pollTimer;
   QByteArray m_readBuffer;

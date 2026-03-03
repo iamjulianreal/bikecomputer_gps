@@ -1,6 +1,5 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.7
-import Bike.GPS 1.0
 
 ApplicationWindow {
     id: win
@@ -19,13 +18,12 @@ ApplicationWindow {
     property real fallbackLat: 48.207200
     property real fallbackLon: 15.618000
 
-    GpsPositionSource {
-        id: gps
-        active: true
-        onFixAvailable: function(latitude, longitude, speedKmh, courseDeg, isoTimestamp) {
+    Connections {
+        target: gpsSource
+        function onFixAvailable(latitude, longitude, speedKmh, courseDeg, isoTimestamp) {
             gpxLogger.addPoint(latitude, longitude, speedKmh, courseDeg, isoTimestamp)
         }
-        onError: function(message) {
+        function onError(message) {
             console.log("GPS error:", message)
         }
     }
@@ -34,21 +32,21 @@ ApplicationWindow {
         id: mapPage
         anchors.fill: parent
         visible: win.pageIndex === 0
-        positionSource: gps
+        positionSource: gpsSource
     }
 
     DataPage {
         id: dataPage
         anchors.fill: parent
         visible: win.pageIndex === 1
-        positionSource: gps
+        positionSource: gpsSource
     }
 
     ConnectivityPage {
         id: connPage
         anchors.fill: parent
         visible: win.pageIndex === 2
-        positionSource: gps
+        positionSource: gpsSource
     }
 
     StartStopMenu {

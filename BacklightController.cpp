@@ -28,7 +28,7 @@ BacklightController::~BacklightController()
 {
 #if BIKECOMPUTER_HAS_PIGPIOD
     if (m_pi >= 0) {
-        set_PWM_dutycycle(m_pi, m_pwmGpio, 0);
+        hardware_PWM(m_pi, m_pwmGpio, 0, 0);
         pigpio_stop(m_pi);
         m_pi = -1;
     }
@@ -78,15 +78,10 @@ bool BacklightController::ensurePwmReady()
         return false;
     }
 
-    set_mode(m_pi, m_pwmGpio, PI_OUTPUT);
-    const int actualFreq = set_PWM_frequency(m_pi, m_pwmGpio, m_pwmFrequency);
-    if (actualFreq <= 0) {
-        markUnavailable(QStringLiteral("set_PWM_frequency failed on GPIO18"));
-        return false;
-    }
-
-    if (set_PWM_range(m_pi, m_pwmGpio, 100) < 0) {
-        markUnavailable(QStringLiteral("set_PWM_range failed on GPIO18"));
+    // Use hardware PWM on GPIO18 to avoid interfering with bit-banged GPS serial
+    const int rc = hardware_PWM(m_pi, m_pwmGpio, static_cast<unsigned>(m_pwmFrequency), 0);
+    if (rc != 0) {
+        markUnavailable(QStringLiteral("hardware_PWM init failed on GPIO18"));
         return false;
     }
 
@@ -110,9 +105,10 @@ void BacklightController::setBrightness(int percent)
     }
 
 #if BIKECOMPUTER_HAS_PIGPIOD
-    const int rc = set_PWM_dutycycle(m_pi, m_pwmGpio, clamped);
+    const unsigned dutyCycle = static_cast<unsigned>((clamped * 1000000) / 100);
+    const int rc = hardware_PWM(m_pi, m_pwmGpio, static_cast<unsigned>(m_pwmFrequency), dutyCycle);
     if (rc != 0) {
-        markUnavailable(QStringLiteral("set_PWM_dutycycle failed on GPIO18"));
+        markUnavailable(QStringLiteral("hardware_PWM failed on GPIO18"));
         return;
     }
 

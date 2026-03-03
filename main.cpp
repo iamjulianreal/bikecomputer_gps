@@ -45,6 +45,8 @@ int main(int argc, char *argv[])
     GpxLogger gpxLogger;
     BacklightController backlightController;
     BatteryMonitor batteryMonitor;
+    GpsPositionSource gpsSource;
+    gpsSource.startUpdates();
 
     QQmlApplicationEngine engine;
 
@@ -60,6 +62,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("gpxLogger", &gpxLogger);
     engine.rootContext()->setContextProperty("backlightController", &backlightController);
     engine.rootContext()->setContextProperty("batteryMonitor", &batteryMonitor);
+    engine.rootContext()->setContextProperty("gpsSource", &gpsSource);
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/Main.qml")));
 
