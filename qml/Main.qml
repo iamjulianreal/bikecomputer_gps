@@ -40,6 +40,7 @@ ApplicationWindow {
         anchors.fill: parent
         visible: win.pageIndex === 1
         positionSource: gpsSource
+        recording: gpxLogger.recording
     }
 
     ConnectivityPage {

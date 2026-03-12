@@ -12,6 +12,9 @@ Item {
     property real lastLon: 0
     property real lastAlt: 0
     property string clockText: "--:--:--"
+    property bool recording: false
+    property date activityStartTime: null
+    property string activityDurationText: "00:00"
 
     function formatCoord(v) {
         return isFinite(v) ? v.toFixed(6) : "-"
@@ -36,6 +39,28 @@ Item {
         clockText = Qt.formatTime(new Date(), "hh:mm:ss")
     }
 
+    function updateActivityDuration() {
+        if (!activityStartTime) {
+            activityDurationText = "00:00"
+            return
+        }
+
+        var elapsedMs = (new Date()).getTime() - activityStartTime.getTime()
+        if (elapsedMs < 0)
+            elapsedMs = 0
+
+        var elapsedMinutes = Math.floor(elapsedMs / 60000)
+        var hours = Math.floor(elapsedMinutes / 60)
+        var minutes = elapsedMinutes % 60
+        activityDurationText = (hours < 10 ? "0" : "") + hours
+                + ":" + (minutes < 10 ? "0" : "") + minutes
+    }
+
+
+    function metricText(value, unit) {
+        return value + "\n" + unit
+    }
+
     Component.onCompleted: updateClock()
 
     Timer {
@@ -45,12 +70,19 @@ Item {
         onTriggered: root.updateClock()
     }
 
+    Timer {
+        interval: 1000
+        running: root.recording
+        repeat: true
+        onTriggered: root.updateActivityDuration()
+    }
+
     Connections {
         target: positionSource
         enabled: !!positionSource
 
         function onPositionChanged() {
-            if (!positionSource.valid) {
+            if (!recording || !positionSource.valid) {
                 return
             }
 
@@ -76,73 +108,131 @@ Item {
         }
     }
 
+    onRecordingChanged: {
+        if (recording) {
+            totalDistanceM = 0
+            totalAscentM = 0
+            hasLastPoint = false
+            lastLat = 0
+            lastLon = 0
+            lastAlt = 0
+            activityStartTime = new Date()
+            activityDurationText = "00:00"
+        } else {
+            updateActivityDuration()
+        }
+    }
+
     Rectangle { anchors.fill: parent; color: "#101010" }
 
-    Grid {
-        anchors.centerIn: parent
-        columns: 2
-        spacing: 10
+    Column {
+        anchors.fill: parent
+        anchors.margins: 10
+        spacing: 8
 
-        Text {
-            color: "white"
-            font.pixelSize: 20
-            text: "Speed"
+        Row {
+            width: parent.width
+            spacing: 8
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 46
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(positionSource && positionSource.valid ? positionSource.speedKmh.toFixed(1) : "-", "km/h")
+                }
+            }
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 46
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText((root.totalDistanceM / 1000.0).toFixed(2), "km")
+                }
+            }
         }
 
-        Text {
-            color: "white"
-            font.pixelSize: 20
-            text: positionSource && positionSource.valid ? positionSource.speedKmh.toFixed(1) + " km/h" : "-"
+        Row {
+            width: parent.width
+            spacing: 8
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 46
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(root.totalAscentM.toFixed(0), "m+")
+                }
+            }
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 46
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(root.activityDurationText, "h:min")
+                }
+            }
         }
 
-        Text {
-            color: "white"
-            text: "Anstieg"
+        Row {
+            width: parent.width
+            spacing: 8
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 46
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(positionSource ? root.formatCoord(positionSource.latitude) : "-", "lat")
+                }
+            }
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 46
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(positionSource ? root.formatCoord(positionSource.longitude) : "-", "lon")
+                }
+            }
         }
 
-        Text {
-            color: "white"
-            text: root.totalAscentM.toFixed(0) + " m"
-        }
-
-        Text {
-            color: "white"
-            text: "Distanz"
-        }
-
-        Text {
-            color: "white"
-            text: (root.totalDistanceM / 1000.0).toFixed(2) + " km"
-        }
-
-        Text {
-            color: "white"
-            text: "Uhrzeit"
-        }
-
-        Text {
-            color: "white"
-            text: root.clockText
-        }
-
-        Text {
-            color: "white"
-            text: "Lat"
-        }
-
-        Text {
-            color: "white"
-            text: positionSource ? root.formatCoord(positionSource.latitude) : "-"
-        }
-
-        Text {
-            color: "white"
-            text: "Lon"
-        }
-
-        Text {
-            color: "white"
-            text: positionSource ? root.formatCoord(positionSource.longitude) : "-"
+        Rectangle {
+            width: parent.width
+            height: 34
+            radius: 6
+            color: "#1A1A1A"
+            Text {
+                anchors.centerIn: parent
+                color: "white"
+                text: "Uhrzeit: " + root.clockText
+            }
         }
     }
 }

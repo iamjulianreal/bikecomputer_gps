@@ -214,8 +214,15 @@ void GpsPositionSource::processNmeaLine(const QByteArray &line) {
   bool hasFix = parseRmc(line, info, speedKmh, courseDeg);
   if (!hasFix) {
     hasFix = parseGgaPosition(line, info);
-    speedKmh = 0.0;
-    courseDeg = 0.0;
+    if (hasFix && m_last.isValid()) {
+      speedKmh = m_last.attribute(QGeoPositionInfo::GroundSpeed) * 3.6;
+      courseDeg = m_last.attribute(QGeoPositionInfo::Direction);
+      info.setAttribute(QGeoPositionInfo::GroundSpeed, speedKmh / 3.6);
+      info.setAttribute(QGeoPositionInfo::Direction, courseDeg);
+    } else {
+      speedKmh = 0.0;
+      courseDeg = 0.0;
+    }
   }
 
   if (!hasFix) {
