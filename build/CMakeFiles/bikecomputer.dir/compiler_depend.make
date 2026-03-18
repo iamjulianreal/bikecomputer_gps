@@ -10,6 +10,8 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
   /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp \
   /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
+  /home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.cpp \
+  /home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.h \
   /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp \
   /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
   /home/julian/bikecomputers/bikecomputer_gps/app.qrc \
@@ -39,6 +41,7 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/aarch64-linux-gnu/bits/sched.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
   /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
   /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/aarch64-linux-gnu/bits/syscall.h \
@@ -50,14 +53,18 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/bits/types.h \
   /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
   /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
   /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
@@ -85,16 +92,42 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceDiscoveryAgent \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyAdvertisingData \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyController \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetooth.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothaddress.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdevicediscoveryagent.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdeviceinfo.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyadvertisingdata.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycharacteristic.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycontroller.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergydescriptor.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyservice.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetooth-config.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetoothglobal.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedPointer \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QUuid \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariantMap \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
@@ -108,7 +141,9 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
@@ -116,9 +151,12 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
@@ -131,7 +169,10 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qsocketnotifier.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
@@ -142,8 +183,11 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/quuid.h \
+  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
   /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
@@ -331,6 +375,7 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/syscall.h \
@@ -341,504 +386,8 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5Config.cmake \
   /usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake \
   /usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5PositioningConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5PositioningConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryGeoclue.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryGeoclue2.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryPoll.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactorySerialNmea.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlPreviewServiceFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5QmlModels/Qt5QmlModelsConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5QmlModels/Qt5QmlModelsConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfig.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h \
-  /usr/share/cmake-3.31/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp \
-  /usr/share/cmake-3.31/Modules/CMakeCXXInformation.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeDetermineCompilerSupport.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeFindBinUtils.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeGenericSystem.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeParseArguments.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeSystem.cmake.in \
-  /usr/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.31/Modules/CMakeUnixFindMake.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/GNU-FindBinUtils.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake \
-  /usr/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake \
-  /usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake \
-  /usr/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake \
-  /usr/share/cmake-3.31/Modules/Linker/GNU.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linux-Determine-CXX.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/Linux.cmake \
-  /usr/share/cmake-3.31/Modules/Platform/UnixPaths.cmake \
-  /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
-  /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h \
-  /home/julian/bikecomputers/bikecomputer_gps/CMakeLists.txt \
-  /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
-  /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
-  /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
-  /home/julian/bikecomputers/bikecomputer_gps/app.qrc \
-  CMakeFiles/3.31.6/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.31.6/CMakeSystem.cmake \
-  bikecomputer_autogen/moc_predefs.h \
-  /home/julian/bikecomputers/bikecomputer_gps/gpio_reader.h \
-  /home/julian/bikecomputers/bikecomputer_gps/main.cpp \
-  /usr/bin/cmake \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsocketnotifier.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/c++0x_warning.h \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/mofunc_impl.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/move_only_function.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/out_ptr.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/sat_arith.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/text_encoding \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gpiod.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5Config.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake \
-  /usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake \
+  /usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfig.cmake \
+  /usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfigVersion.cmake \
   /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake \
   /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake \
   /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake \
@@ -998,4006 +547,14 @@ bikecomputer_autogen/timestamp: /home/julian/bikecomputers/bikecomputer_gps/Back
   /usr/share/cmake-3.31/Modules/Platform/Linux.cmake \
   /usr/share/cmake-3.31/Modules/Platform/UnixPaths.cmake
 
-CMakeFiles/bikecomputer.dir/BacklightController.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h \
-  /usr/local/include/pigpio.h \
-  /usr/local/include/pigpiod_if2.h
 
-CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
-  /usr/include/aarch64-linux-gnu/bits/fcntl.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
-  /usr/include/aarch64-linux-gnu/bits/ioctls.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stat.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/ioctl.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/asm-generic/ioctls.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/fcntl.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/falloc.h \
-  /usr/include/linux/i2c-dev.h \
-  /usr/include/linux/ioctl.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/ioctl.h \
-  /usr/lib/linux/uapi/arm64/asm/ioctls.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h
+/usr/share/cmake-3.31/Modules/Platform/UnixPaths.cmake:
 
-CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h \
-  /usr/local/include/pigpio.h \
-  /usr/local/include/pigpiod_if2.h
+/usr/share/cmake-3.31/Modules/Platform/Linux.cmake:
 
-CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QStandardPaths \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdir.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfiledevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfileinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstandardpaths.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h
+/usr/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake:
 
-CMakeFiles/bikecomputer.dir/MapController.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/MapController.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaMethod \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaProperty \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSet \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetaobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h
-
-CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o: bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp \
-  /usr/include/stdc-predef.h
-
-CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: bikecomputer_autogen/mocs_compilation.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
-  /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h \
-  /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
-  /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
-  /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
-  /home/julian/bikecomputers/bikecomputer_gps/gpio_reader.h \
-  bikecomputer_autogen/EWIEGA46WW/moc_BacklightController.cpp \
-  bikecomputer_autogen/EWIEGA46WW/moc_BatteryMonitor.cpp \
-  bikecomputer_autogen/EWIEGA46WW/moc_GpsPositionSource.cpp \
-  bikecomputer_autogen/EWIEGA46WW/moc_GpxLogger.cpp \
-  bikecomputer_autogen/EWIEGA46WW/moc_MapController.cpp \
-  bikecomputer_autogen/EWIEGA46WW/moc_gpio_reader.cpp \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsocketnotifier.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gpiod.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h
-
-CMakeFiles/bikecomputer.dir/main.cpp.o: /home/julian/bikecomputers/bikecomputer_gps/main.cpp \
-  /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
-  /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h \
-  /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h \
-  /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
-  /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
-  /home/julian/bikecomputers/bikecomputer_gps/gpio_reader.h \
-  /usr/include/GL/gl.h \
-  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
-  /usr/include/aarch64-linux-gnu/bits/confname.h \
-  /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
-  /usr/include/aarch64-linux-gnu/bits/endian.h \
-  /usr/include/aarch64-linux-gnu/bits/endianness.h \
-  /usr/include/aarch64-linux-gnu/bits/environments.h \
-  /usr/include/aarch64-linux-gnu/bits/errno.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
-  /usr/include/aarch64-linux-gnu/bits/floatn.h \
-  /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
-  /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
-  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
-  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/aarch64-linux-gnu/bits/local_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/locale.h \
-  /usr/include/aarch64-linux-gnu/bits/long-double.h \
-  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
-  /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/aarch64-linux-gnu/bits/mathcalls-macros.h \
-  /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
-  /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
-  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/aarch64-linux-gnu/bits/sched.h \
-  /usr/include/aarch64-linux-gnu/bits/select.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
-  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/aarch64-linux-gnu/bits/time.h \
-  /usr/include/aarch64-linux-gnu/bits/time64.h \
-  /usr/include/aarch64-linux-gnu/bits/timesize.h \
-  /usr/include/aarch64-linux-gnu/bits/timex.h \
-  /usr/include/aarch64-linux-gnu/bits/types.h \
-  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
-  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
-  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/aarch64-linux-gnu/bits/waitflags.h \
-  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
-  /usr/include/aarch64-linux-gnu/bits/wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
-  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
-  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QAbstractListModel \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QEvent \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFileInfo \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QFlags \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QHash \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QIODevice \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QList \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMap \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMargins \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMutex \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QMutexLocker \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QPoint \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QRect \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QRectF \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QRunnable \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSet \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSettings \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSize \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSizeF \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QStorageInfo \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QStringList \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QThread \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTime \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreapplication.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreevent.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qcryptographichash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatastream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdeadlinetimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qdir.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfiledevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qfileinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qline.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmargins.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetaobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qmutex.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qprocessordetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrunnable.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsettings.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsize.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsocketnotifier.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstorageinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qthread.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qurl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QGuiApplication \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QImage \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QMatrix4x4 \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QPainter \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QPixmap \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QScreen \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/QTransform \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qcolor.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qcursor.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qevent.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qfont.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontinfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qfontmetrics.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qguiapplication.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qicon.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qimage.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qinputmethod.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qkeysequence.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qopengl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglext.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qpainter.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qpen.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixelformat.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qpolygon.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qquaternion.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qregion.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qrgb.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qrgba64.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qscreen.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qsurface.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qsurfaceformat.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtextoption.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtgui-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtouchdevice.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector2d.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector3d.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qvector4d.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindow.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkAccessManager \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkDiskCache \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkReply \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkRequest \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslConfiguration \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslPreSharedKeyAuthenticator \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractnetworkcache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkaccessmanager.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdiskcache.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkreply.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkrequest.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qssl.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcertificate.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslconfiguration.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslerror.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslpresharedkeyauthenticator.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslsocket.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeocoordinate.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfo.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/QQmlApplicationEngine \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/QQmlContext \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qjsengine.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qjsvalue.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqml.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlapplicationengine.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlcontext.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmldebug.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlengine.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlerror.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmllist.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlparserstatus.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlprivate.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlpropertyvaluesource.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qtqml-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQml/qtqmlglobal.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/QQuickWindow \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/qquickwindow.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/qsggeometry.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/qsgnode.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/qsgrendererinterface.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/qtquick-config.h \
-  /usr/include/aarch64-linux-gnu/qt5/QtQuick/qtquickglobal.h \
-  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
-  /usr/include/aarch64-linux-gnu/sys/select.h \
-  /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
-  /usr/include/aarch64-linux-gnu/sys/syscall.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
-  /usr/include/aarch64-linux-gnu/sys/types.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/assert.h \
-  /usr/include/c++/14/algorithm \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/atomic \
-  /usr/include/c++/14/backward/auto_ptr.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/algorithmfwd.h \
-  /usr/include/c++/14/bits/align.h \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocated_ptr.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/atomic_base.h \
-  /usr/include/c++/14/bits/atomic_futex.h \
-  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14/bits/atomic_timed_wait.h \
-  /usr/include/c++/14/bits/atomic_wait.h \
-  /usr/include/c++/14/bits/basic_ios.h \
-  /usr/include/c++/14/bits/basic_ios.tcc \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/chrono.h \
-  /usr/include/c++/14/bits/chrono_io.h \
-  /usr/include/c++/14/bits/codecvt.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/deque.tcc \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/erase_if.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/fs_dir.h \
-  /usr/include/c++/14/bits/fs_fwd.h \
-  /usr/include/c++/14/bits/fs_ops.h \
-  /usr/include/c++/14/bits/fs_path.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/hashtable.h \
-  /usr/include/c++/14/bits/hashtable_policy.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/ios_base.h \
-  /usr/include/c++/14/bits/istream.tcc \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/list.tcc \
-  /usr/include/c++/14/bits/locale_classes.h \
-  /usr/include/c++/14/bits/locale_classes.tcc \
-  /usr/include/c++/14/bits/locale_conv.h \
-  /usr/include/c++/14/bits/locale_facets.h \
-  /usr/include/c++/14/bits/locale_facets.tcc \
-  /usr/include/c++/14/bits/locale_facets_nonio.h \
-  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/node_handle.h \
-  /usr/include/c++/14/bits/ostream.tcc \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/parse_numbers.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/quoted_string.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_algo.h \
-  /usr/include/c++/14/bits/ranges_algobase.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_uninitialized.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/semaphore_base.h \
-  /usr/include/c++/14/bits/shared_ptr.h \
-  /usr/include/c++/14/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14/bits/shared_ptr_base.h \
-  /usr/include/c++/14/bits/specfun.h \
-  /usr/include/c++/14/bits/sstream.tcc \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/std_function.h \
-  /usr/include/c++/14/bits/std_mutex.h \
-  /usr/include/c++/14/bits/std_thread.h \
-  /usr/include/c++/14/bits/stl_algo.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_deque.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_heap.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_list.h \
-  /usr/include/c++/14/bits/stl_map.h \
-  /usr/include/c++/14/bits/stl_multimap.h \
-  /usr/include/c++/14/bits/stl_multiset.h \
-  /usr/include/c++/14/bits/stl_numeric.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_set.h \
-  /usr/include/c++/14/bits/stl_tempbuf.h \
-  /usr/include/c++/14/bits/stl_tree.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/stream_iterator.h \
-  /usr/include/c++/14/bits/streambuf.tcc \
-  /usr/include/c++/14/bits/streambuf_iterator.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/this_thread_sleep.h \
-  /usr/include/c++/14/bits/unicode-data.h \
-  /usr/include/c++/14/bits/unicode.h \
-  /usr/include/c++/14/bits/uniform_int_dist.h \
-  /usr/include/c++/14/bits/unique_lock.h \
-  /usr/include/c++/14/bits/unique_ptr.h \
-  /usr/include/c++/14/bits/unordered_map.h \
-  /usr/include/c++/14/bits/unordered_set.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cassert \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/charconv \
-  /usr/include/c++/14/chrono \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/cmath \
-  /usr/include/c++/14/codecvt \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/condition_variable \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/ctime \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/cwctype \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/deque \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/aligned_buffer.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/atomicity.h \
-  /usr/include/c++/14/ext/concurrence.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/filesystem \
-  /usr/include/c++/14/format \
-  /usr/include/c++/14/functional \
-  /usr/include/c++/14/future \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iomanip \
-  /usr/include/c++/14/ios \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/iostream \
-  /usr/include/c++/14/istream \
-  /usr/include/c++/14/iterator \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/list \
-  /usr/include/c++/14/locale \
-  /usr/include/c++/14/map \
-  /usr/include/c++/14/memory \
-  /usr/include/c++/14/mutex \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/numeric \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/ostream \
-  /usr/include/c++/14/pstl/execution_defs.h \
-  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14/pstl/glue_memory_defs.h \
-  /usr/include/c++/14/pstl/glue_numeric_defs.h \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/ratio \
-  /usr/include/c++/14/semaphore \
-  /usr/include/c++/14/set \
-  /usr/include/c++/14/shared_mutex \
-  /usr/include/c++/14/span \
-  /usr/include/c++/14/sstream \
-  /usr/include/c++/14/stdexcept \
-  /usr/include/c++/14/stdlib.h \
-  /usr/include/c++/14/stop_token \
-  /usr/include/c++/14/streambuf \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/system_error \
-  /usr/include/c++/14/thread \
-  /usr/include/c++/14/tr1/bessel_function.tcc \
-  /usr/include/c++/14/tr1/beta_function.tcc \
-  /usr/include/c++/14/tr1/ell_integral.tcc \
-  /usr/include/c++/14/tr1/exp_integral.tcc \
-  /usr/include/c++/14/tr1/gamma.tcc \
-  /usr/include/c++/14/tr1/hypergeometric.tcc \
-  /usr/include/c++/14/tr1/legendre_function.tcc \
-  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/14/tr1/poly_hermite.tcc \
-  /usr/include/c++/14/tr1/poly_laguerre.tcc \
-  /usr/include/c++/14/tr1/riemann_zeta.tcc \
-  /usr/include/c++/14/tr1/special_function_util.h \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/unordered_map \
-  /usr/include/c++/14/unordered_set \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/variant \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gpiod.h \
-  /usr/include/inttypes.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/sched/types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/linux/types.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/semaphore.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/syscall.h \
-  /usr/include/time.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/float.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
-  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
-  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
-  /usr/lib/linux/uapi/arm64/asm/errno.h \
-  /usr/lib/linux/uapi/arm64/asm/posix_types.h \
-  /usr/lib/linux/uapi/arm64/asm/types.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd.h \
-  /usr/lib/linux/uapi/arm64/asm/unistd_64.h \
-  /usr/local/include/osmscout/Area.h \
-  /usr/local/include/osmscout/FeatureReader.h \
-  /usr/local/include/osmscout/GeoCoord.h \
-  /usr/local/include/osmscout/GroundTile.h \
-  /usr/local/include/osmscout/Intersection.h \
-  /usr/local/include/osmscout/Node.h \
-  /usr/local/include/osmscout/OSMScoutTypes.h \
-  /usr/local/include/osmscout/ObjectRef.h \
-  /usr/local/include/osmscout/Path.h \
-  /usr/local/include/osmscout/Pixel.h \
-  /usr/local/include/osmscout/Point.h \
-  /usr/local/include/osmscout/Route.h \
-  /usr/local/include/osmscout/Tag.h \
-  /usr/local/include/osmscout/TypeConfig.h \
-  /usr/local/include/osmscout/TypeFeature.h \
-  /usr/local/include/osmscout/TypeInfoSet.h \
-  /usr/local/include/osmscout/Way.h \
-  /usr/local/include/osmscout/async/AsyncWorker.h \
-  /usr/local/include/osmscout/async/Breaker.h \
-  /usr/local/include/osmscout/async/CancelableFuture.h \
-  /usr/local/include/osmscout/async/ProcessingQueue.h \
-  /usr/local/include/osmscout/async/ReadWriteLock.h \
-  /usr/local/include/osmscout/async/Signal.h \
-  /usr/local/include/osmscout/async/Thread.h \
-  /usr/local/include/osmscout/async/WorkQueue.h \
-  /usr/local/include/osmscout/db/AreaAreaIndex.h \
-  /usr/local/include/osmscout/db/AreaDataFile.h \
-  /usr/local/include/osmscout/db/AreaIndex.h \
-  /usr/local/include/osmscout/db/AreaNodeIndex.h \
-  /usr/local/include/osmscout/db/AreaRouteIndex.h \
-  /usr/local/include/osmscout/db/AreaWayIndex.h \
-  /usr/local/include/osmscout/db/BasemapDatabase.h \
-  /usr/local/include/osmscout/db/BoundingBoxDataFile.h \
-  /usr/local/include/osmscout/db/Database.h \
-  /usr/local/include/osmscout/db/LocationIndex.h \
-  /usr/local/include/osmscout/db/NodeDataFile.h \
-  /usr/local/include/osmscout/db/ObjectVariantDataFile.h \
-  /usr/local/include/osmscout/db/OptimizeAreasLowZoom.h \
-  /usr/local/include/osmscout/db/OptimizeWaysLowZoom.h \
-  /usr/local/include/osmscout/db/WaterIndex.h \
-  /usr/local/include/osmscout/db/WayDataFile.h \
-  /usr/local/include/osmscout/elevation/ElevationService.h \
-  /usr/local/include/osmscout/elevation/SRTM.h \
-  /usr/local/include/osmscout/feature/AccessFeature.h \
-  /usr/local/include/osmscout/feature/AddressFeature.h \
-  /usr/local/include/osmscout/feature/BridgeFeature.h \
-  /usr/local/include/osmscout/feature/ClockwiseDirectionFeature.h \
-  /usr/local/include/osmscout/feature/ColorFeature.h \
-  /usr/local/include/osmscout/feature/DestinationFeature.h \
-  /usr/local/include/osmscout/feature/EleFeature.h \
-  /usr/local/include/osmscout/feature/GradeFeature.h \
-  /usr/local/include/osmscout/feature/LanesFeature.h \
-  /usr/local/include/osmscout/feature/LayerFeature.h \
-  /usr/local/include/osmscout/feature/MaxSpeedFeature.h \
-  /usr/local/include/osmscout/feature/NameAltFeature.h \
-  /usr/local/include/osmscout/feature/NameFeature.h \
-  /usr/local/include/osmscout/feature/OpeningHoursFeature.h \
-  /usr/local/include/osmscout/feature/PhoneFeature.h \
-  /usr/local/include/osmscout/feature/RefFeature.h \
-  /usr/local/include/osmscout/feature/RoundaboutFeature.h \
-  /usr/local/include/osmscout/feature/WebsiteFeature.h \
-  /usr/local/include/osmscout/feature/WidthFeature.h \
-  /usr/local/include/osmscout/io/DataFile.h \
-  /usr/local/include/osmscout/io/File.h \
-  /usr/local/include/osmscout/io/FileScanner.h \
-  /usr/local/include/osmscout/io/FileWriter.h \
-  /usr/local/include/osmscout/io/NumericIndex.h \
-  /usr/local/include/osmscout/lib/CoreFeatures.h \
-  /usr/local/include/osmscout/lib/CoreImportExport.h \
-  /usr/local/include/osmscout/location/Location.h \
-  /usr/local/include/osmscout/location/LocationDescriptionService.h \
-  /usr/local/include/osmscout/location/LocationService.h \
-  /usr/local/include/osmscout/log/Logger.h \
-  /usr/local/include/osmscout/navigation/Agents.h \
-  /usr/local/include/osmscout/navigation/ArrivalEstimateAgent.h \
-  /usr/local/include/osmscout/navigation/BearingAgent.h \
-  /usr/local/include/osmscout/navigation/DataAgent.h \
-  /usr/local/include/osmscout/navigation/Engine.h \
-  /usr/local/include/osmscout/navigation/LaneAgent.h \
-  /usr/local/include/osmscout/navigation/Navigation.h \
-  /usr/local/include/osmscout/navigation/PositionAgent.h \
-  /usr/local/include/osmscout/navigation/RouteInstructionAgent.h \
-  /usr/local/include/osmscout/navigation/RouteStateAgent.h \
-  /usr/local/include/osmscout/navigation/SpeedAgent.h \
-  /usr/local/include/osmscout/navigation/VoiceInstructionAgent.h \
-  /usr/local/include/osmscout/projection/MercatorProjection.h \
-  /usr/local/include/osmscout/projection/Projection.h \
-  /usr/local/include/osmscout/routing/AbstractRoutingService.h \
-  /usr/local/include/osmscout/routing/DBFileOffset.h \
-  /usr/local/include/osmscout/routing/MultiDBRoutingService.h \
-  /usr/local/include/osmscout/routing/MultiDBRoutingState.h \
-  /usr/local/include/osmscout/routing/RouteData.h \
-  /usr/local/include/osmscout/routing/RouteDataFile.h \
-  /usr/local/include/osmscout/routing/RouteDescription.h \
-  /usr/local/include/osmscout/routing/RouteDescriptionPostprocessor.h \
-  /usr/local/include/osmscout/routing/RouteNode.h \
-  /usr/local/include/osmscout/routing/RouteNodeDataFile.h \
-  /usr/local/include/osmscout/routing/RoutePostprocessor.h \
-  /usr/local/include/osmscout/routing/RoutingDB.h \
-  /usr/local/include/osmscout/routing/RoutingProfile.h \
-  /usr/local/include/osmscout/routing/RoutingService.h \
-  /usr/local/include/osmscout/routing/SimpleRoutingService.h \
-  /usr/local/include/osmscout/system/Assert.h \
-  /usr/local/include/osmscout/system/Compiler.h \
-  /usr/local/include/osmscout/system/Math.h \
-  /usr/local/include/osmscout/system/SSEMathPublic.h \
-  /usr/local/include/osmscout/system/SystemTypes.h \
-  /usr/local/include/osmscout/util/Bearing.h \
-  /usr/local/include/osmscout/util/Cache.h \
-  /usr/local/include/osmscout/util/Color.h \
-  /usr/local/include/osmscout/util/Distance.h \
-  /usr/local/include/osmscout/util/Exception.h \
-  /usr/local/include/osmscout/util/GeoBox.h \
-  /usr/local/include/osmscout/util/Geometry.h \
-  /usr/local/include/osmscout/util/LaneTurn.h \
-  /usr/local/include/osmscout/util/Locale.h \
-  /usr/local/include/osmscout/util/Magnification.h \
-  /usr/local/include/osmscout/util/Number.h \
-  /usr/local/include/osmscout/util/ObjectPool.h \
-  /usr/local/include/osmscout/util/Parsing.h \
-  /usr/local/include/osmscout/util/ScreenBox.h \
-  /usr/local/include/osmscout/util/StopClock.h \
-  /usr/local/include/osmscout/util/String.h \
-  /usr/local/include/osmscout/util/StringMatcher.h \
-  /usr/local/include/osmscout/util/TagErrorReporter.h \
-  /usr/local/include/osmscout/util/TileId.h \
-  /usr/local/include/osmscout/util/Time.h \
-  /usr/local/include/osmscout/util/Transformation.h \
-  /usr/local/include/osmscoutclient/AdminRegionInfo.h \
-  /usr/local/include/osmscoutclient/ClientFeatures.h \
-  /usr/local/include/osmscoutclient/ClientImportExport.h \
-  /usr/local/include/osmscoutclient/DBInstance.h \
-  /usr/local/include/osmscoutclient/DBJob.h \
-  /usr/local/include/osmscoutclient/DBThread.h \
-  /usr/local/include/osmscoutclient/LocationInfo.h \
-  /usr/local/include/osmscoutclient/MapDirectory.h \
-  /usr/local/include/osmscoutclient/MapManager.h \
-  /usr/local/include/osmscoutclient/MapProvider.h \
-  /usr/local/include/osmscoutclient/OnlineTileProvider.h \
-  /usr/local/include/osmscoutclient/POILookupModule.h \
-  /usr/local/include/osmscoutclient/Settings.h \
-  /usr/local/include/osmscoutclient/VoiceProvider.h \
-  /usr/local/include/osmscoutclient/json/json_fwd.hpp \
-  /usr/local/include/osmscoutclientqt/AvailableMapsModel.h \
-  /usr/local/include/osmscoutclientqt/ClientQtFeatures.h \
-  /usr/local/include/osmscoutclientqt/ClientQtImportExport.h \
-  /usr/local/include/osmscoutclientqt/DBLoadJob.h \
-  /usr/local/include/osmscoutclientqt/ElevationModule.h \
-  /usr/local/include/osmscoutclientqt/FileDownloader.h \
-  /usr/local/include/osmscoutclientqt/IconLookup.h \
-  /usr/local/include/osmscoutclientqt/LocationEntry.h \
-  /usr/local/include/osmscoutclientqt/LookupModule.h \
-  /usr/local/include/osmscoutclientqt/MapDownloader.h \
-  /usr/local/include/osmscoutclientqt/MapRenderer.h \
-  /usr/local/include/osmscoutclientqt/NavigationModule.h \
-  /usr/local/include/osmscoutclientqt/OSMScoutQt.h \
-  /usr/local/include/osmscoutclientqt/OsmTileDownloader.h \
-  /usr/local/include/osmscoutclientqt/OverlayObject.h \
-  /usr/local/include/osmscoutclientqt/QmlRoutingProfile.h \
-  /usr/local/include/osmscoutclientqt/QtRouteData.h \
-  /usr/local/include/osmscoutclientqt/RouteDescriptionBuilder.h \
-  /usr/local/include/osmscoutclientqt/RouteStep.h \
-  /usr/local/include/osmscoutclientqt/Router.h \
-  /usr/local/include/osmscoutclientqt/SearchModule.h \
-  /usr/local/include/osmscoutclientqt/StyleModule.h \
-  /usr/local/include/osmscoutclientqt/TileCache.h \
-  /usr/local/include/osmscoutclientqt/TiledMapRenderer.h \
-  /usr/local/include/osmscoutclientqt/Voice.h \
-  /usr/local/include/osmscoutclientqt/VoiceManager.h \
-  /usr/local/include/osmscoutclientqt/VoicePlayer.h \
-  /usr/local/include/osmscoutmap/DataTileCache.h \
-  /usr/local/include/osmscoutmap/LabelLayouter.h \
-  /usr/local/include/osmscoutmap/LabelLayouterHelper.h \
-  /usr/local/include/osmscoutmap/LabelPath.h \
-  /usr/local/include/osmscoutmap/LabelProvider.h \
-  /usr/local/include/osmscoutmap/MapData.h \
-  /usr/local/include/osmscoutmap/MapFeatures.h \
-  /usr/local/include/osmscoutmap/MapImportExport.h \
-  /usr/local/include/osmscoutmap/MapPainter.h \
-  /usr/local/include/osmscoutmap/MapParameter.h \
-  /usr/local/include/osmscoutmap/MapService.h \
-  /usr/local/include/osmscoutmap/StyleConfig.h \
-  /usr/local/include/osmscoutmap/StyleDescription.h \
-  /usr/local/include/osmscoutmap/StyleError.h \
-  /usr/local/include/osmscoutmap/StyleProcessor.h \
-  /usr/local/include/osmscoutmap/Styles.h
-
-bikecomputer: /lib/aarch64-linux-gnu/libFLAC.so.14 \
-  /lib/aarch64-linux-gnu/libGL.so.1 \
-  /lib/aarch64-linux-gnu/libGLX.so.0 \
-  /lib/aarch64-linux-gnu/libGLdispatch.so.0 \
-  /lib/aarch64-linux-gnu/libQt5Multimedia.so.5 \
-  /lib/aarch64-linux-gnu/libQt5Svg.so.5 \
-  /lib/aarch64-linux-gnu/libQt5Widgets.so.5 \
-  /lib/aarch64-linux-gnu/libX11-xcb.so.1 \
-  /lib/aarch64-linux-gnu/libX11.so.6 \
-  /lib/aarch64-linux-gnu/libXau.so.6 \
-  /lib/aarch64-linux-gnu/libXdmcp.so.6 \
-  /lib/aarch64-linux-gnu/libasyncns.so.0 \
-  /lib/aarch64-linux-gnu/libatomic.so.1 \
-  /lib/aarch64-linux-gnu/libbrotlicommon.so.1 \
-  /lib/aarch64-linux-gnu/libbrotlidec.so.1 \
-  /lib/aarch64-linux-gnu/libbz2.so.1.0 \
-  /lib/aarch64-linux-gnu/libc.so.6 \
-  /lib/aarch64-linux-gnu/libcap.so.2 \
-  /lib/aarch64-linux-gnu/libcom_err.so.2 \
-  /lib/aarch64-linux-gnu/libdbus-1.so.3 \
-  /lib/aarch64-linux-gnu/libdouble-conversion.so.3 \
-  /lib/aarch64-linux-gnu/libfreetype.so.6 \
-  /lib/aarch64-linux-gnu/libglib-2.0.so.0 \
-  /lib/aarch64-linux-gnu/libgraphite2.so.3 \
-  /lib/aarch64-linux-gnu/libgssapi_krb5.so.2 \
-  /lib/aarch64-linux-gnu/libharfbuzz.so.0 \
-  /lib/aarch64-linux-gnu/libicudata.so.76 \
-  /lib/aarch64-linux-gnu/libicui18n.so.76 \
-  /lib/aarch64-linux-gnu/libicuuc.so.76 \
-  /lib/aarch64-linux-gnu/libk5crypto.so.3 \
-  /lib/aarch64-linux-gnu/libkeyutils.so.1 \
-  /lib/aarch64-linux-gnu/libkrb5.so.3 \
-  /lib/aarch64-linux-gnu/libkrb5support.so.0 \
-  /lib/aarch64-linux-gnu/libm.so.6 \
-  /lib/aarch64-linux-gnu/libmd4c.so.0 \
-  /lib/aarch64-linux-gnu/libmp3lame.so.0 \
-  /lib/aarch64-linux-gnu/libmpg123.so.0 \
-  /lib/aarch64-linux-gnu/libmvec.so.1 \
-  /lib/aarch64-linux-gnu/libogg.so.0 \
-  /lib/aarch64-linux-gnu/libopus.so.0 \
-  /lib/aarch64-linux-gnu/libpcre2-16.so.0 \
-  /lib/aarch64-linux-gnu/libpcre2-8.so.0 \
-  /lib/aarch64-linux-gnu/libpng16.so.16 \
-  /lib/aarch64-linux-gnu/libpulse.so.0 \
-  /lib/aarch64-linux-gnu/libresolv.so.2 \
-  /lib/aarch64-linux-gnu/libsndfile.so.1 \
-  /lib/aarch64-linux-gnu/libsystemd.so.0 \
-  /lib/aarch64-linux-gnu/libvorbis.so.0 \
-  /lib/aarch64-linux-gnu/libvorbisenc.so.2 \
-  /lib/aarch64-linux-gnu/libxcb.so.1 \
-  /lib/aarch64-linux-gnu/libz.so.1 \
-  /lib/aarch64-linux-gnu/libzstd.so.1 \
-  /lib/ld-linux-aarch64.so.1 \
-  /usr/lib/aarch64-linux-gnu/libQt5Core.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libQt5Network.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libQt5Positioning.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libQt5Qml.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libQt5QmlModels.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libQt5Quick.so.5.15.15 \
-  /usr/lib/aarch64-linux-gnu/libc_nonshared.a \
-  /usr/lib/aarch64-linux-gnu/libgpiod.so \
-  /usr/lib/aarch64-linux-gnu/pulseaudio/libpulsecommon-17.0.so \
-  /usr/lib/aarch64-linux-gnu/Scrt1.o \
-  /usr/lib/aarch64-linux-gnu/crti.o \
-  /usr/lib/aarch64-linux-gnu/crtn.o \
-  /usr/lib/aarch64-linux-gnu/libc.so \
-  /usr/lib/aarch64-linux-gnu/libgcc_s.so.1 \
-  /usr/lib/aarch64-linux-gnu/libm.so \
-  /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o \
-  /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o \
-  /usr/lib/gcc/aarch64-linux-gnu/14/libgcc.a \
-  /usr/lib/gcc/aarch64-linux-gnu/14/libgcc_s.so \
-  /usr/lib/gcc/aarch64-linux-gnu/14/libstdc++.so \
-  /usr/local/lib/libosmscout.so.1 \
-  /usr/local/lib/libosmscout_client.so.1 \
-  /usr/local/lib/libosmscout_client_qt.so \
-  /usr/local/lib/libosmscout_map.so.1 \
-  /usr/local/lib/libosmscout_map_qt.so.1 \
-  /usr/local/lib/libpigpiod_if2.so \
-  CMakeFiles/bikecomputer.dir/BacklightController.cpp.o \
-  CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o \
-  CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o \
-  CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o \
-  CMakeFiles/bikecomputer.dir/MapController.cpp.o \
-  CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o \
-  CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o \
-  CMakeFiles/bikecomputer.dir/main.cpp.o
-
-
-CMakeFiles/bikecomputer.dir/MapController.cpp.o:
-
-CMakeFiles/bikecomputer.dir/BacklightController.cpp.o:
-
-/usr/local/lib/libpigpiod_if2.so:
-
-/usr/local/lib/libosmscout.so.1:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/libstdc++.so:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/libgcc.a:
-
-/usr/lib/aarch64-linux-gnu/libm.so:
-
-/usr/lib/aarch64-linux-gnu/crtn.o:
-
-/usr/lib/aarch64-linux-gnu/libc_nonshared.a:
-
-/usr/lib/aarch64-linux-gnu/libQt5Quick.so.5.15.15:
-
-/usr/lib/aarch64-linux-gnu/libQt5QmlModels.so.5.15.15:
-
-/usr/lib/aarch64-linux-gnu/libQt5Qml.so.5.15.15:
-
-/usr/lib/aarch64-linux-gnu/libQt5Network.so.5.15.15:
-
-/usr/lib/aarch64-linux-gnu/libQt5Gui.so.5.15.15:
-
-/usr/lib/aarch64-linux-gnu/libQt5Core.so.5.15.15:
-
-/lib/aarch64-linux-gnu/libzstd.so.1:
-
-/lib/aarch64-linux-gnu/libmvec.so.1:
-
-/lib/aarch64-linux-gnu/libmp3lame.so.0:
-
-/lib/aarch64-linux-gnu/libresolv.so.2:
-
-/lib/aarch64-linux-gnu/libm.so.6:
-
-/lib/aarch64-linux-gnu/libkeyutils.so.1:
-
-/lib/aarch64-linux-gnu/libicui18n.so.76:
-
-/lib/aarch64-linux-gnu/libharfbuzz.so.0:
-
-/lib/aarch64-linux-gnu/libgssapi_krb5.so.2:
-
-/lib/aarch64-linux-gnu/libasyncns.so.0:
-
-/lib/aarch64-linux-gnu/libXdmcp.so.6:
-
-/lib/aarch64-linux-gnu/libX11.so.6:
-
-/lib/aarch64-linux-gnu/libQt5Svg.so.5:
-
-/lib/aarch64-linux-gnu/libGLdispatch.so.0:
-
-/lib/aarch64-linux-gnu/libGLX.so.0:
-
-/lib/aarch64-linux-gnu/libFLAC.so.14:
-
-/usr/local/include/osmscoutmap/Styles.h:
-
-/usr/local/include/osmscoutmap/StyleDescription.h:
-
-/usr/local/include/osmscoutmap/MapPainter.h:
-
-/usr/local/include/osmscoutmap/MapImportExport.h:
-
-/lib/aarch64-linux-gnu/libvorbis.so.0:
-
-/usr/local/include/osmscoutmap/LabelProvider.h:
-
-/usr/local/include/osmscoutmap/DataTileCache.h:
-
-/usr/local/include/osmscoutclientqt/VoiceManager.h:
-
-/usr/local/include/osmscoutclientqt/Voice.h:
-
-/usr/local/include/osmscoutclientqt/RouteStep.h:
-
-/usr/local/include/osmscoutclientqt/RouteDescriptionBuilder.h:
-
-/usr/local/include/osmscoutclientqt/QmlRoutingProfile.h:
-
-/usr/local/include/osmscoutclientqt/OSMScoutQt.h:
-
-/usr/local/include/osmscoutclientqt/MapRenderer.h:
-
-/usr/local/include/osmscoutclientqt/MapDownloader.h:
-
-/usr/local/include/osmscoutclientqt/IconLookup.h:
-
-/usr/local/include/osmscoutclientqt/DBLoadJob.h:
-
-/usr/local/include/osmscoutclientqt/ClientQtImportExport.h:
-
-/usr/local/include/osmscoutclientqt/ClientQtFeatures.h:
-
-/lib/aarch64-linux-gnu/libQt5Widgets.so.5:
-
-/usr/local/include/osmscoutclientqt/AvailableMapsModel.h:
-
-/usr/local/include/osmscoutclient/VoiceProvider.h:
-
-/usr/local/include/osmscoutclient/OnlineTileProvider.h:
-
-/usr/local/include/osmscoutclientqt/ElevationModule.h:
-
-/usr/local/include/osmscoutclient/MapManager.h:
-
-/usr/local/include/osmscoutclient/DBThread.h:
-
-/usr/local/include/osmscoutclient/AdminRegionInfo.h:
-
-/usr/local/include/osmscout/util/TileId.h:
-
-/usr/local/include/osmscout/util/String.h:
-
-/lib/aarch64-linux-gnu/libsndfile.so.1:
-
-/usr/local/include/osmscout/util/StopClock.h:
-
-/usr/local/include/osmscout/util/ObjectPool.h:
-
-/usr/local/include/osmscout/util/Number.h:
-
-/usr/local/include/osmscout/util/Magnification.h:
-
-/usr/local/include/osmscout/util/Locale.h:
-
-/usr/local/include/osmscout/util/LaneTurn.h:
-
-/usr/local/include/osmscout/system/SSEMathPublic.h:
-
-/usr/local/include/osmscout/system/Compiler.h:
-
-/usr/local/include/osmscout/system/Assert.h:
-
-/usr/local/include/osmscout/routing/RoutingService.h:
-
-/usr/local/include/osmscout/routing/RoutingProfile.h:
-
-/usr/local/include/osmscout/routing/RouteDescription.h:
-
-/usr/local/include/osmscout/routing/RouteDataFile.h:
-
-/usr/local/include/osmscout/routing/RouteData.h:
-
-/usr/local/include/osmscout/projection/MercatorProjection.h:
-
-/usr/local/include/osmscout/navigation/RouteInstructionAgent.h:
-
-/usr/local/include/osmscout/navigation/PositionAgent.h:
-
-/usr/local/include/osmscout/navigation/LaneAgent.h:
-
-/usr/local/include/osmscout/navigation/BearingAgent.h:
-
-/usr/local/include/osmscout/navigation/Agents.h:
-
-/usr/local/include/osmscout/log/Logger.h:
-
-/usr/local/include/osmscout/location/LocationDescriptionService.h:
-
-/usr/local/include/osmscout/location/Location.h:
-
-/usr/local/include/osmscout/lib/CoreImportExport.h:
-
-/usr/local/include/osmscout/io/FileScanner.h:
-
-/usr/local/include/osmscout/io/File.h:
-
-/usr/local/include/osmscout/io/DataFile.h:
-
-/usr/local/include/osmscout/routing/RouteDescriptionPostprocessor.h:
-
-/usr/local/include/osmscout/feature/WidthFeature.h:
-
-/usr/local/include/osmscout/feature/RefFeature.h:
-
-/lib/aarch64-linux-gnu/libbz2.so.1.0:
-
-/usr/local/include/osmscout/feature/PhoneFeature.h:
-
-/usr/local/include/osmscout/feature/LayerFeature.h:
-
-/usr/local/include/osmscout/feature/ColorFeature.h:
-
-CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o:
-
-/usr/local/include/osmscout/feature/ClockwiseDirectionFeature.h:
-
-/usr/local/include/osmscout/feature/BridgeFeature.h:
-
-/usr/local/include/osmscout/feature/AddressFeature.h:
-
-/usr/local/include/osmscout/feature/AccessFeature.h:
-
-/usr/local/include/osmscout/db/WayDataFile.h:
-
-/usr/local/include/osmscout/db/OptimizeAreasLowZoom.h:
-
-/lib/aarch64-linux-gnu/libgraphite2.so.3:
-
-/usr/local/include/osmscout/db/NodeDataFile.h:
-
-/usr/local/include/osmscout/db/BasemapDatabase.h:
-
-/usr/local/include/osmscout/db/AreaRouteIndex.h:
-
-/usr/local/include/osmscout/db/AreaNodeIndex.h:
-
-/usr/local/include/osmscout/db/AreaIndex.h:
-
-/usr/local/include/osmscout/db/AreaAreaIndex.h:
-
-/usr/local/include/osmscout/async/WorkQueue.h:
-
-/usr/local/include/osmscout/async/ReadWriteLock.h:
-
-/usr/local/include/osmscout/async/ProcessingQueue.h:
-
-/usr/local/include/osmscout/async/AsyncWorker.h:
-
-/usr/local/include/osmscout/Way.h:
-
-/usr/local/include/osmscout/TypeConfig.h:
-
-/usr/local/include/osmscout/Tag.h:
-
-/usr/local/include/osmscout/Point.h:
-
-/usr/local/include/osmscout/Pixel.h:
-
-/usr/local/include/osmscout/Path.h:
-
-/usr/local/include/osmscout/ObjectRef.h:
-
-/lib/aarch64-linux-gnu/libQt5Multimedia.so.5:
-
-/usr/local/include/osmscout/GroundTile.h:
-
-/lib/aarch64-linux-gnu/libkrb5support.so.0:
-
-/usr/include/c++/14/unordered_set:
-
-/usr/local/include/osmscoutclientqt/SearchModule.h:
-
-/usr/local/include/osmscout/lib/CoreFeatures.h:
-
-/usr/include/c++/14/tr1/special_function_util.h:
-
-/lib/aarch64-linux-gnu/libX11-xcb.so.1:
-
-/usr/include/c++/14/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/14/tr1/hypergeometric.tcc:
-
-/usr/include/c++/14/tr1/exp_integral.tcc:
-
-/usr/include/c++/14/tr1/ell_integral.tcc:
-
-/usr/include/c++/14/tr1/beta_function.tcc:
-
-/usr/include/c++/14/shared_mutex:
-
-/usr/include/c++/14/condition_variable:
-
-/usr/include/c++/14/cassert:
-
-/usr/include/c++/14/bits/unordered_set.h:
-
-/usr/include/c++/14/bits/unique_lock.h:
-
-/usr/local/include/osmscout/TypeFeature.h:
-
-/usr/include/c++/14/bits/stl_set.h:
-
-/usr/include/c++/14/bits/stl_deque.h:
-
-/usr/include/c++/14/bits/std_thread.h:
-
-/usr/local/include/osmscoutclient/LocationInfo.h:
-
-/usr/include/c++/14/bits/specfun.h:
-
-/usr/include/c++/14/bits/semaphore_base.h:
-
-/usr/include/c++/14/bits/fs_path.h:
-
-/usr/include/c++/14/bits/fs_ops.h:
-
-/usr/include/c++/14/bits/fs_fwd.h:
-
-/usr/include/c++/14/bits/deque.tcc:
-
-/usr/include/c++/14/bits/atomic_timed_wait.h:
-
-/usr/include/c++/14/bits/atomic_futex.h:
-
-/usr/local/lib/libosmscout_client.so.1:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlparserstatus.h:
-
-/usr/local/include/osmscout/util/GeoBox.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmllist.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlengine.h:
-
-/usr/local/include/osmscout/Intersection.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmldebug.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlcontext.h:
-
-/usr/local/include/osmscout/db/WaterIndex.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlapplicationengine.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qjsengine.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/QQmlApplicationEngine:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslpresharedkeyauthenticator.h:
-
-/usr/local/include/osmscoutclientqt/NavigationModule.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslerror.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslcertificate.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/qsgnode.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qssl.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkrequest.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkdiskcache.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractsocket.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslPreSharedKeyAuthenticator:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkRequest:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkReply:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkDiskCache:
-
-/usr/local/include/osmscout/feature/DestinationFeature.h:
-
-/usr/local/include/osmscout/async/CancelableFuture.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qwindowdefs.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qwindow.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qvector3d.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qtransform.h:
-
-/usr/local/include/osmscout/util/Parsing.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qtgui-config.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qtextoption.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qsurfaceformat.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qrgba64.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qregion.h:
-
-/usr/local/include/osmscoutclient/DBInstance.h:
-
-/usr/local/include/osmscout/Area.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qquaternion.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpolygon.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpixelformat.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qopengl.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qkeysequence.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qinputmethod.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/QSslConfiguration:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qguiapplication.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qfontinfo.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qfont.h:
-
-/usr/local/include/osmscout/system/SystemTypes.h:
-
-/usr/local/include/osmscout/routing/RoutingDB.h:
-
-/usr/include/c++/14/codecvt:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qevent.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qcursor.h:
-
-/usr/local/include/osmscout/feature/MaxSpeedFeature.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qcolor.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qbrush.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QScreen:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QMatrix4x4:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkreply.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QImage:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpainter.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qurl.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qthread.h:
-
-/usr/local/include/osmscout/db/AreaDataFile.h:
-
-/usr/local/include/osmscout/FeatureReader.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qstorageinfo.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qsize.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qsettings.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qrect.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qprocess.h:
-
-/usr/local/include/osmscout/navigation/Engine.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qpointer.h:
-
-/usr/local/include/osmscout/OSMScoutTypes.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qmutex.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qmargins.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qline.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qgenericmatrix.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h:
-
-/usr/local/include/osmscoutclientqt/StyleModule.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qdeadlinetimer.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreevent.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QStringList:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QSizeF:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QSize:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QRectF:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QRect:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QPoint:
-
-/lib/aarch64-linux-gnu/libpcre2-8.so.0:
-
-/usr/local/include/osmscout/util/Cache.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtcpsocket.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMutexLocker:
-
-CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMutex:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QHash:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QFileInfo:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QAbstractListModel:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/qtquickglobal.h:
-
-/usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/local/include/osmscoutclientqt/Router.h:
-
-/usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QStorageInfo:
-
-/usr/include/aarch64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/aarch64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/c++/14/tr1/poly_hermite.tcc:
-
-/usr/include/aarch64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/local/include/osmscout/routing/RouteNodeDataFile.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMargins:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QFlags:
-
-/usr/include/GL/gl.h:
-
-bikecomputer_autogen/EWIEGA46WW/moc_MapController.cpp:
-
-bikecomputer_autogen/EWIEGA46WW/moc_GpxLogger.cpp:
-
-bikecomputer_autogen/EWIEGA46WW/moc_GpsPositionSource.cpp:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qvector2d.h:
-
-bikecomputer_autogen/EWIEGA46WW/moc_BatteryMonitor.cpp:
-
-bikecomputer_autogen/EWIEGA46WW/moc_BacklightController.cpp:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslsocket.h:
-
-bikecomputer_autogen/mocs_compilation.cpp:
-
-bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qmetaobject.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QVariant:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaProperty:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaObject:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qrgb.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaMethod:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qfileinfo.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o:
-
-/usr/local/include/osmscout/Route.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qfiledevice.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qdir.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QStandardPaths:
-
-/usr/local/include/osmscout/util/Transformation.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QFile:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QDir:
-
-/lib/ld-linux-aarch64.so.1:
-
-/usr/include/asm-generic/ioctls.h:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/aarch64-linux-gnu/sys/ttydefaults.h:
-
-CMakeFiles/bikecomputer.dir/main.cpp.o:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QTransform:
-
-/usr/include/aarch64-linux-gnu/sys/ioctl.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/aarch64-linux-gnu/bits/struct_stat.h:
-
-/usr/include/aarch64-linux-gnu/bits/stat.h:
-
-/lib/aarch64-linux-gnu/libmd4c.so.0:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qsslconfiguration.h:
-
-/usr/include/aarch64-linux-gnu/bits/ioctl-types.h:
-
-/usr/include/aarch64-linux-gnu/bits/fcntl.h:
-
-/usr/include/aarch64-linux-gnu/bits/fcntl-linux.h:
-
-/usr/local/include/pigpiod_if2.h:
-
-/lib/aarch64-linux-gnu/libc.so.6:
-
-/usr/local/include/osmscout/util/ScreenBox.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/stdint.h:
-
-/lib/aarch64-linux-gnu/libbrotlidec.so.1:
-
-/usr/include/linux/sched/types.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/limits.h:
-
-/usr/include/libintl.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/14/sstream:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqml.h:
-
-/usr/include/c++/14/span:
-
-/lib/aarch64-linux-gnu/libXau.so.6:
-
-/usr/include/c++/14/pstl/pstl_config.h:
-
-/usr/include/c++/14/locale:
-
-/usr/include/c++/14/iomanip:
-
-/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/14/cstdio:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qtouchdevice.h:
-
-/usr/include/c++/14/bits/unordered_map.h:
-
-/usr/include/c++/14/bits/unicode-data.h:
-
-/usr/include/c++/14/bits/sstream.tcc:
-
-/usr/include/c++/14/bits/locale_facets_nonio.tcc:
-
-/usr/local/include/osmscoutmap/MapFeatures.h:
-
-/usr/include/c++/14/bits/locale_facets_nonio.h:
-
-/usr/include/c++/14/bits/locale_conv.h:
-
-/usr/local/include/osmscoutclient/ClientFeatures.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/c++/14/bits/stream_iterator.h:
-
-/usr/local/include/osmscout/feature/NameAltFeature.h:
-
-/usr/include/c++/14/bits/stl_tree.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/share/cmake-3.31/Modules/CMakeUnixFindMake.cmake:
-
-/usr/include/c++/14/bits/stl_pair.h:
-
-/usr/local/include/osmscoutmap/MapParameter.h:
-
-/usr/include/c++/14/bits/ostream_insert.h:
-
-/usr/include/linux/falloc.h:
-
-/usr/bin/cmake:
-
-/lib/aarch64-linux-gnu/libatomic.so.1:
-
-/usr/include/c++/14/bits/stl_map.h:
-
-/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
-
-CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
-
-/usr/lib/aarch64-linux-gnu/pulseaudio/libpulsecommon-17.0.so:
-
-/usr/include/assert.h:
-
-/usr/local/include/osmscoutclient/Settings.h:
-
-/usr/include/c++/14/bits/stl_construct.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qrunnable.h:
-
-/usr/include/c++/14/bits/stl_vector.h:
-
-/usr/include/c++/14/bits/stl_bvector.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/libgcc_s.so:
-
-/usr/include/c++/14/bits/std_abs.h:
-
-/usr/local/include/osmscout/async/Signal.h:
-
-/usr/include/c++/14/bits/shared_ptr_base.h:
-
-/usr/include/c++/14/bits/shared_ptr.h:
-
-/usr/include/c++/14/bits/ranges_cmp.h:
-
-/usr/include/c++/14/bits/streambuf_iterator.h:
-
-/usr/include/c++/14/bits/ranges_base.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlerror.h:
-
-/usr/include/c++/14/bits/range_access.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
-
-/usr/include/c++/14/bits/postypes.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QTime:
-
-/usr/share/cmake-3.31/Modules/CMakeDetermineCompiler.cmake:
-
-/lib/aarch64-linux-gnu/libcom_err.so.2:
-
-/usr/include/c++/14/bits/out_ptr.h:
+/usr/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake:
 
 /usr/include/c++/14/bits/nested_exception.h:
 
@@ -5005,161 +562,73 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
 
 /usr/include/c++/14/bits/unique_ptr.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix4x4.h:
-
 /usr/include/c++/14/iterator:
 
 /usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/c++/14/bits/memory_resource.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake:
 
 /usr/include/c++/14/bits/localefwd.h:
 
 /home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp:
 
-/usr/include/c++/14/bits/list.tcc:
-
-/usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h:
-
 /usr/include/c++/14/bits/ios_base.h:
 
-/usr/include/c++/14/semaphore:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress:
 
 /usr/include/c++/14/bits/invoke.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QSet:
-
-/usr/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake:
-
 /usr/include/c++/14/limits:
-
-/usr/include/c++/14/bits/functional_hash.h:
-
-/usr/include/c++/14/bits/ranges_algo.h:
-
-/usr/local/include/osmscout/async/Breaker.h:
-
-/usr/include/c++/14/bits/erase_if.h:
-
-/usr/local/lib/libosmscout_map_qt.so.1:
-
-/usr/include/c++/14/bits/cxxabi_forced.h:
 
 /usr/include/c++/14/bits/charconv.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake:
 
-/usr/include/c++/14/bits/atomic_wait.h:
+/usr/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake:
 
-/usr/local/include/osmscout/TypeInfoSet.h:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycontroller.h:
+
+/usr/include/c++/14/bits/atomic_wait.h:
 
 /usr/include/c++/14/bits/allocator.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfo:
 
-/usr/include/c++/14/bits/fs_dir.h:
-
 /usr/include/string.h:
 
 /usr/include/c++/14/bits/ostream.tcc:
-
-/usr/local/include/osmscoutclient/MapDirectory.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qabstractnetworkcache.h:
 
 /usr/include/c++/14/bits/align.h:
 
 /usr/include/c++/14/ext/aligned_buffer.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h:
-
-/usr/include/c++/14/bit:
-
-/usr/include/aarch64-linux-gnu/bits/stdint-least.h:
-
 /usr/include/c++/14/bits/locale_facets.tcc:
 
 /usr/include/c++/14/text_encoding:
 
-/usr/include/c++/14/bits/chrono.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h:
 
 /usr/include/c++/14/backward/binders.h:
 
 /usr/include/asm-generic/posix_types.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/qtquick-config.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/c++/14/pstl/execution_defs.h:
-
-/lib/aarch64-linux-gnu/libxcb.so.1:
-
-/usr/include/c++/14/bits/basic_ios.h:
-
-/usr/include/c++/14/utility:
-
-/usr/include/c++/14/bits/stl_tempbuf.h:
-
-/usr/include/c++/14/bits/ranges_algobase.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryGeoclue2.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake:
-
-/usr/local/include/osmscout/util/Geometry.h:
-
-/usr/include/c++/14/tr1/legendre_function.tcc:
-
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
 
-/usr/include/c++/14/bits/std_function.h:
+/usr/include/aarch64-linux-gnu/qt5/QtPositioning/qgeopositioninfosource.h:
 
-/usr/include/c++/14/bits/enable_special_members.h:
+/usr/include/c++/14/bits/list.tcc:
 
-/usr/local/include/osmscout/feature/GradeFeature.h:
-
-/usr/local/include/osmscout/db/BoundingBoxDataFile.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake:
 
-/usr/include/c++/14/bits/refwrap.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreapplication.h:
-
-/usr/include/c++/14/bits/streambuf.tcc:
-
-/usr/include/stdio.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/QNetworkAccessManager:
-
-/usr/include/c++/14/bits/locale_facets.h:
-
-/usr/include/c++/14/bits/basic_string.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource:
-
-/lib/aarch64-linux-gnu/libdbus-1.so.3:
-
 /usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoCoordinate:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qstandardpaths.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/time_t.h:
 
-/lib/aarch64-linux-gnu/libopus.so.0:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake:
 
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -5167,15 +636,13 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
 
 /usr/share/cmake-3.31/Modules/Compiler/Clang-DetermineCompiler.cmake:
 
-/usr/include/c++/14/bits/quoted_string.h:
-
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qsystemdetection.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h:
 
-/usr/include/math.h:
+/usr/include/assert.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h:
+/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h:
 
@@ -5185,15 +652,7 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-/usr/include/fcntl.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h:
-
-/usr/local/include/osmscoutclientqt/OsmTileDownloader.h:
-
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h:
-
-/usr/include/c++/14/thread:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake:
 
@@ -5203,23 +662,15 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qtnetwork-config.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h:
 
-/usr/local/include/osmscoutclientqt/VoicePlayer.h:
-
-/usr/include/c++/14/bits/requires_hosted.h:
-
-/usr/share/cmake-3.31/Modules/CMakeSystem.cmake.in:
-
-/usr/include/c++/14/bits/atomic_base.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpaintdevice.h:
-
-/usr/lib/linux/uapi/arm64/asm/ioctls.h:
+bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h:
+
+/usr/include/c++/14/bits/atomic_base.h:
 
 /usr/include/c++/14/optional:
 
@@ -5227,95 +678,141 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QEvent:
+/usr/include/aarch64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/aarch64-linux-gnu/bits/timesize.h:
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake:
 
-/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlpropertyvaluesource.h:
+/usr/include/gpiod.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime:
+/usr/include/c++/14/ext/string_conversions.h:
 
-/usr/local/include/osmscout/db/AreaWayIndex.h:
+/usr/include/c++/14/bits/c++0x_warning.h:
 
-/usr/include/aarch64-linux-gnu/bits/time64.h:
+/usr/include/c++/14/bits/basic_string.h:
 
-/lib/aarch64-linux-gnu/libvorbisenc.so.2:
+/usr/include/c++/14/bits/locale_facets.h:
 
-/lib/aarch64-linux-gnu/libmpg123.so.0:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h:
 
-/usr/share/cmake-3.31/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h:
 
-CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h:
 
-/usr/local/include/osmscout/feature/WebsiteFeature.h:
+/usr/share/cmake-3.31/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
-/usr/include/c++/14/bits/iterator_concepts.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h:
 
-/lib/aarch64-linux-gnu/libsystemd.so.0:
+/usr/include/c++/14/pstl/glue_numeric_defs.h:
 
-/usr/include/c++/14/bits/stl_function.h:
+/usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake:
+/usr/include/c++/14/bits/mofunc_impl.h:
 
-/usr/include/c++/14/memory:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake:
-
-/usr/local/include/osmscout/feature/NameFeature.h:
-
-/usr/include/aarch64-linux-gnu/sys/time.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h:
-
-/usr/include/c++/14/ratio:
-
-/usr/include/c++/14/bits/sat_arith.h:
-
-/usr/include/c++/14/bits/exception_ptr.h:
-
-/usr/include/c++/14/atomic:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QSettings:
+/usr/include/linux/posix_types.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h:
 
-/usr/include/c++/14/bits/stl_multimap.h:
+/usr/include/c++/14/bits/memory_resource.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QSocketNotifier:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake:
+
+/usr/include/c++/14/bits/allocated_ptr.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h:
+
+/usr/share/cmake-3.31/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h:
+
+/usr/include/c++/14/bits/max_size_type.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
 
-/usr/include/c++/14/bits/std_mutex.h:
+/usr/include/c++/14/bits/stl_multimap.h:
 
-/usr/local/include/osmscout/io/NumericIndex.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h:
 
-/usr/include/aarch64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h:
 
-/usr/include/c++/14/deque:
+/usr/include/c++/14/map:
 
-/usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h:
+/usr/share/cmake-3.31/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
 
-/usr/include/c++/14/clocale:
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake:
+/usr/include/c++/14/bits/cxxabi_init_exception.h:
 
-/usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/share/cmake-3.31/Modules/Compiler/Cray-DetermineCompiler.cmake:
 
-/usr/include/c++/14/stdlib.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake:
+/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/share/cmake-3.31/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/bits/timesize.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/include/aarch64-linux-gnu/bits/time64.h:
 
-/usr/include/linux/i2c-dev.h:
+/usr/share/cmake-3.31/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h:
+
+/usr/include/aarch64-linux-gnu/bits/time.h:
+
+/usr/include/c++/14/bits/iterator_concepts.h:
+
+/usr/include/c++/14/bits/exception_ptr.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/lib/linux/uapi/arm64/asm/unistd_64.h:
+
+/usr/include/aarch64-linux-gnu/bits/setjmp.h:
+
+/usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
+
+/usr/share/cmake-3.31/Modules/CMakeParseArguments.cmake:
+
+/usr/include/c++/14/streambuf:
+
+/home/julian/bikecomputers/bikecomputer_gps/CMakeLists.txt:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer:
+
+/usr/include/c++/14/bits/stl_map.h:
+
+/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/aarch64-linux-gnu/sys/syscall.h:
+
+/home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h:
+
+/usr/include/aarch64-linux-gnu/bits/long-double.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake:
+
+/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime:
 
 /usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
 
@@ -5327,77 +824,13 @@ CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o:
 
 /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qfontmetrics.h:
+/usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/aarch64-linux-gnu/bits/pthreadtypes.h:
+/usr/include/c++/14/bits/erase_if.h:
 
-/home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h:
+/home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.h:
 
-/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/aarch64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/aarch64-linux-gnu/sys/syscall.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/c++/14/pstl/glue_numeric_defs.h:
-
-/usr/local/include/osmscoutmap/StyleError.h:
-
-/usr/local/include/osmscout/util/StringMatcher.h:
-
-/usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QProcess:
-
-/usr/include/aarch64-linux-gnu/bits/long-double.h:
-
-/home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.h:
-
-/usr/include/c++/14/pstl/glue_algorithm_defs.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QPixmap:
-
-/usr/share/cmake-3.31/Modules/Compiler/TIClang-DetermineCompiler.cmake:
-
-/lib/aarch64-linux-gnu/libz.so.1:
-
-/home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h:
-
-/usr/include/c++/14/bits/c++0x_warning.h:
-
-/usr/lib/aarch64-linux-gnu/libgpiod.so:
-
-/lib/aarch64-linux-gnu/libdouble-conversion.so.3:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qsysinfo.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h:
-
-/usr/include/aarch64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/aarch64-linux-gnu/bits/types.h:
-
-/usr/include/aarch64-linux-gnu/bits/setjmp.h:
-
-/usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
-
-/usr/local/include/osmscoutclientqt/TiledMapRenderer.h:
-
-/home/julian/bikecomputers/bikecomputer_gps/CMakeLists.txt:
-
-/usr/include/c++/14/streambuf:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergydescriptor.h:
 
 /usr/include/aarch64-linux-gnu/bits/syscall.h:
 
@@ -5411,15 +844,9 @@ CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o:
 
 /usr/include/locale.h:
 
-/usr/lib/linux/uapi/arm64/asm/ioctl.h:
-
 /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/local/include/osmscout/db/ObjectVariantDataFile.h:
-
-/usr/local/include/osmscout/db/Database.h:
 
 /usr/include/aarch64-linux-gnu/gnu/stubs.h:
 
@@ -5427,33 +854,67 @@ CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o:
 
 /usr/include/c++/14/bits/locale_classes.h:
 
-/usr/local/include/osmscoutclient/POILookupModule.h:
+/usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h:
 
-/usr/include/c++/14/filesystem:
+/usr/include/c++/14/atomic:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyAdvertisingData:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h:
+/usr/include/aarch64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/14/clocale:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake:
+
+/home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h:
+
+/usr/include/aarch64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/14/bits/streambuf.tcc:
 
 /home/julian/bikecomputers/bikecomputer_gps/BacklightController.cpp:
 
-/usr/include/c++/14/bits/stl_algobase.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h:
 
-/usr/include/c++/14/bits/hashtable_policy.h:
+/usr/include/c++/14/iosfwd:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/aarch64-linux-gnu/qt5/QtPositioning/qpositioningglobal.h:
 
-/home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp:
+/usr/share/cmake-3.31/Modules/Compiler/TIClang-DetermineCompiler.cmake:
+
+/home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h:
+
+/usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetooth-config.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake:
+
+/usr/include/c++/14/bit:
+
+/home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.cpp:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake:
+
+/usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h:
+
+/usr/include/ctype.h:
+
+/usr/include/aarch64-linux-gnu/bits/timex.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h:
+
+/usr/include/c++/14/typeinfo:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray:
 
 /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h:
-
-/home/julian/bikecomputers/bikecomputer_gps/MapController.cpp:
-
-/usr/local/include/osmscout/feature/OpeningHoursFeature.h:
-
-/usr/include/c++/14/bits/stl_iterator_base_types.h:
 
 /home/julian/bikecomputers/bikecomputer_gps/MapController.h:
 
@@ -5461,35 +922,21 @@ CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o:
 
 /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp:
 
-/usr/local/include/osmscoutmap/MapData.h:
-
-/usr/local/include/osmscout/util/Bearing.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qjsvalue.h:
-
-CMakeFiles/3.31.6/CMakeCXXCompiler.cmake:
+/usr/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake:
 
 /usr/include/c++/14/bits/exception_defines.h:
 
-/usr/include/aarch64-linux-gnu/bits/posix2_lim.h:
-
 /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/local/include/pigpio.h:
+/usr/include/aarch64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/aarch64-linux-gnu/bits/locale.h:
+/home/julian/bikecomputers/bikecomputer_gps/BacklightController.h:
 
-/usr/local/include/osmscout/db/LocationIndex.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qtypeinfo.h:
 
-/usr/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake:
+/home/julian/bikecomputers/bikecomputer_gps/MapController.cpp:
 
-/usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h:
-
-/usr/include/c++/14/bits/mofunc_impl.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h:
-
-/usr/include/linux/posix_types.h:
+CMakeFiles/3.31.6/CMakeCXXCompiler.cmake:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake:
 
@@ -5499,37 +946,41 @@ CMakeFiles/3.31.6/CMakeSystem.cmake:
 
 /usr/include/aarch64-linux-gnu/bits/endian.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qtqmlglobal.h:
+/usr/include/asm-generic/types.h:
 
-bikecomputer_autogen/moc_predefs.h:
+/usr/include/c++/14/pstl/execution_defs.h:
 
-/usr/include/c++/14/iosfwd:
+/usr/include/c++/14/bits/basic_ios.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h:
+/usr/include/c++/14/utility:
 
-/usr/include/c++/14/bits/stl_heap.h:
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QMap:
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake:
 
-/usr/include/aarch64-linux-gnu/bits/select.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/gpiod.h:
+/usr/share/cmake-3.31/Modules/CMakeGenericSystem.cmake:
+
+/usr/include/aarch64-linux-gnu/bits/types/FILE.h:
+
+/home/julian/bikecomputers/bikecomputer_gps/main.cpp:
+
+/home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qtcore-config.h:
 
 /usr/include/c++/14/bits/hash_bytes.h:
 
-/usr/include/c++/14/stop_token:
-
 /usr/include/c++/14/bits/char_traits.h:
 
 /usr/include/c++/14/list:
 
+/usr/include/c++/14/bits/stream_iterator.h:
+
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h:
 
 /usr/include/c++/14/cctype:
-
-/usr/include/c++/14/tr1/bessel_function.tcc:
 
 /home/julian/bikecomputers/bikecomputer_gps/gpio_reader.h:
 
@@ -5537,11 +988,7 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/aarch64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QPainter:
-
 /usr/include/c++/14/bits/move.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qvector4d.h:
 
 /usr/include/c++/14/algorithm:
 
@@ -5551,33 +998,31 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h:
 
-/usr/local/include/osmscout/io/FileWriter.h:
+/usr/bin/cmake:
 
-/usr/include/c++/14/bits/algorithmfwd.h:
+/usr/include/c++/14/bits/ostream_insert.h:
 
-/usr/include/c++/14/bits/ptr_traits.h:
-
-/usr/local/include/osmscout/navigation/RouteStateAgent.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpen.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qconfig.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/qquickwindow.h:
-
-/usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/c++/14/bits/stl_pair.h:
 
 /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/aarch64-linux-gnu/bits/endianness.h:
 
+/usr/include/c++/14/bits/stl_vector.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h:
+
+/usr/include/aarch64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/14/functional:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QUuid:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfigVersion.cmake:
+
 /usr/include/aarch64-linux-gnu/bits/errno.h:
-
-/usr/local/include/osmscout/Node.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/qsgrendererinterface.h:
 
 /usr/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
@@ -5585,29 +1030,23 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/c++/14/ios:
 
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake:
+
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/c++/14/ext/atomicity.h:
 
-/usr/include/c++/14/bits/max_size_type.h:
+/usr/include/c++/14/bits/cxxabi_forced.h:
 
-/usr/lib/aarch64-linux-gnu/libgcc_s.so.1:
+/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/lib/gcc/aarch64-linux-gnu/14/include/float.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h:
 
-/usr/include/c++/14/chrono:
+/usr/include/aarch64-linux-gnu/bits/locale.h:
 
-/home/julian/bikecomputers/bikecomputer_gps/BacklightController.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h:
-
-/usr/include/c++/14/bits/stl_numeric.h:
-
-/usr/local/include/osmscout/elevation/ElevationService.h:
-
-/usr/include/aarch64-linux-gnu/bits/getopt_core.h:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdevicediscoveryagent.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfig.cmake:
 
@@ -5619,89 +1058,59 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake:
-
-/usr/include/c++/14/iostream:
-
-/usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/aarch64-linux-gnu/bits/time.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h:
-
-/lib/aarch64-linux-gnu/libbrotlicommon.so.1:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qscreen.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h:
-
-/usr/include/aarch64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/14/bits/stl_multiset.h:
-
 /usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/aarch64-linux-gnu/bits/wchar.h:
 
-/usr/local/include/osmscout/navigation/DataAgent.h:
+/usr/include/c++/14/bits/exception.h:
 
-/usr/include/c++/14/bits/ranges_uninitialized.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
 
-/usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h:
+/usr/share/cmake-3.31/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qtguiglobal.h:
+/usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h:
+/usr/lib/linux/uapi/arm64/asm/errno.h:
 
-/usr/include/ctype.h:
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QThread:
+/usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/c++/14/bits/parse_numbers.h:
+/usr/include/time.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h:
+
+/usr/include/c++/14/cwchar:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h:
 
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
 
 /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h:
 
-/usr/local/include/osmscout/feature/LanesFeature.h:
-
 /usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h:
 
 /usr/share/cmake-3.31/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
 
-/usr/include/aarch64-linux-gnu/sys/select.h:
+/usr/include/aarch64-linux-gnu/qt5/QtPositioning/QGeoPositionInfoSource:
 
-/usr/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceDiscoveryAgent:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer:
+/usr/share/cmake-3.31/Modules/Linker/GNU.cmake:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h:
 
-/usr/local/include/osmscout/util/Distance.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5PositioningConfig.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QObject:
+/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5Config.cmake:
 
-/usr/include/c++/14/bits/shared_ptr_atomic.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h:
+/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qflags.h:
 
@@ -5709,145 +1118,201 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/lib/linux/uapi/arm64/asm/bitsperlong.h:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake:
+/usr/include/aarch64-linux-gnu/bits/typesizes.h:
 
-/usr/include/aarch64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/14/bits/stl_iterator.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QString:
-
-/usr/local/include/osmscout/feature/EleFeature.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/aarch64-linux-gnu/bits/floatn.h:
-
-/usr/include/c++/14/tr1/gamma.tcc:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic_cxx11.h:
-
-/usr/include/c++/14/bits/unicode.h:
-
-/usr/include/c++/14/map:
-
-/usr/local/include/osmscout/routing/MultiDBRoutingService.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qmatrix.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
-
-/usr/local/include/osmscoutclient/json/json_fwd.hpp:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h:
-
-/usr/local/lib/libosmscout_map.so.1:
-
-/usr/local/include/osmscout/util/Time.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qdatastream.h:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyController:
 
 /usr/include/c++/14/exception:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector:
 
-/usr/share/cmake-3.31/Modules/Compiler/Cray-DetermineCompiler.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h:
 
-/usr/local/include/osmscoutmap/LabelLayouter.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/quuid.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qicon.h:
-
-/usr/include/aarch64-linux-gnu/bits/ioctls.h:
-
-/usr/include/c++/14/bits/cxxabi_init_exception.h:
-
-/lib/aarch64-linux-gnu/libfreetype.so.6:
-
-/usr/include/aarch64-linux-gnu/bits/timex.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qbasicatomic.h:
-
-/usr/local/include/osmscout/routing/RoutePostprocessor.h:
-
-/usr/local/include/osmscout/navigation/Navigation.h:
-
-/usr/include/c++/14/future:
-
-/usr/include/c++/14/typeinfo:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/14/bits/exception.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
-
-/lib/aarch64-linux-gnu/libkrb5.so.3:
-
-/usr/include/time.h:
-
-/usr/include/c++/14/system_error:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
-
-/usr/include/c++/14/bits/allocated_ptr.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qatomic.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
-
-/usr/include/c++/14/set:
-
-/usr/include/aarch64-linux-gnu/bits/environments.h:
-
-/usr/include/c++/14/functional:
-
-/usr/lib/aarch64-linux-gnu/libc.so:
-
-/lib/aarch64-linux-gnu/libk5crypto.so.3:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h:
-
-/usr/include/c++/14/cwchar:
+/usr/include/c++/14/cstdlib:
 
 /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h:
 
-/usr/local/include/osmscout/GeoCoord.h:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetoothglobal.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qlogging.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyadvertisingdata.h:
+
+/usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/14/stdlib.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake:
+
+/usr/share/cmake-3.31/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycharacteristic.h:
+
+/usr/share/cmake-3.31/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothaddress.h:
+
+/usr/include/c++/14/bits/stl_iterator.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QString:
+
+/usr/share/cmake-3.31/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+
+/usr/include/aarch64-linux-gnu/bits/types.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyservice.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfig.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetooth.h:
+
+/usr/include/c++/14/cstddef:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QElapsedTimer:
+
+/usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/14/numeric:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5PositioningConfig.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedPointer:
+
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QObject:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qgenericatomic.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer:
+
+/usr/include/c++/14/bits/stl_bvector.h:
+
+/usr/include/aarch64-linux-gnu/bits/floatn.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QVariantMap:
+
+/usr/include/c++/14/bits/out_ptr.h:
+
+/usr/include/c++/14/bits/postypes.h:
+
+/usr/share/cmake-3.31/Modules/CMakeDetermineCompiler.cmake:
+
+/usr/include/c++/14/bits/algorithmfwd.h:
+
+/usr/include/c++/14/bits/ptr_traits.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake:
+
+/usr/include/c++/14/bits/range_access.h:
+
+/usr/share/cmake-3.31/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
+
+/usr/include/c++/14/bits/functional_hash.h:
+
+/usr/include/c++/14/bits/ranges_algo.h:
+
+/usr/share/cmake-3.31/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+
+/usr/include/c++/14/bits/ranges_base.h:
+
+/usr/include/c++/14/bits/ranges_cmp.h:
+
+/usr/include/c++/14/bits/streambuf_iterator.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qarraydata.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h:
+
+/usr/include/c++/14/bits/ranges_uninitialized.h:
+
+/usr/include/c++/14/bits/refwrap.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake:
+
+/usr/share/cmake-3.31/Modules/CMakeSystem.cmake.in:
+
+/usr/include/c++/14/bits/requires_hosted.h:
+
+/usr/include/c++/14/bits/sat_arith.h:
+
+/usr/include/c++/14/bits/shared_ptr.h:
+
+/usr/include/c++/14/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/14/bits/shared_ptr_base.h:
+
+/usr/include/c++/14/bits/std_abs.h:
+
+/usr/include/c++/14/bits/std_function.h:
+
+/usr/include/c++/14/bits/std_mutex.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake:
+
+/usr/include/c++/14/bits/stl_algobase.h:
+
+/usr/include/c++/14/bits/stl_construct.h:
+
+/usr/include/c++/14/bits/stl_function.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake:
+
+/usr/include/c++/14/memory:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake:
+
+/usr/include/c++/14/bits/stl_heap.h:
+
+/usr/include/c++/14/bits/stl_iterator_base_types.h:
+
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qelapsedtimer.h:
+
+/usr/include/c++/14/bits/stl_numeric.h:
+
+/usr/share/cmake-3.31/Modules/CMakeUnixFindMake.cmake:
+
+/usr/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryGeoclue2.cmake:
+
+/usr/include/c++/14/bits/ranges_algobase.h:
+
+/usr/include/c++/14/bits/stl_tempbuf.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/14/bits/stl_tree.h:
 
 /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h:
 
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdeviceinfo.h:
+
 /usr/include/c++/14/bits/string_view.tcc:
-
-/usr/local/include/osmscout/projection/Projection.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QRunnable:
 
 /usr/include/c++/14/bits/stringfwd.h:
 
 /usr/include/c++/14/bits/uniform_int_dist.h:
 
 /usr/lib/linux/uapi/arm64/asm/types.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglext.h:
 
 /usr/include/c++/14/bits/uses_allocator.h:
 
@@ -5863,33 +1328,21 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/c++/14/bits/version.h:
 
-/usr/lib/aarch64-linux-gnu/Scrt1.o:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5PositioningConfigVersion.cmake:
 
 /usr/include/c++/14/charconv:
 
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactorySerialNmea.cmake:
+
 /usr/include/c++/14/climits:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/14/compare:
 
 /usr/include/c++/14/ostream:
 
-/usr/local/include/osmscoutclientqt/OverlayObject.h:
-
-/usr/include/c++/14/cstddef:
-
 /usr/include/c++/14/cstdint:
-
-/usr/local/include/osmscoutclient/MapProvider.h:
-
-/usr/include/c++/14/cstdlib:
-
-/usr/local/include/osmscout/routing/MultiDBRoutingState.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake:
 
@@ -5899,25 +1352,13 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/c++/14/format:
 
-/usr/local/include/osmscout/routing/AbstractRoutingService.h:
-
-/usr/include/c++/14/ext/atomicity.h:
-
 /usr/include/c++/14/ext/numeric_traits.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
-
-/usr/include/c++/14/ext/string_conversions.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h:
 
 /usr/include/c++/14/ext/type_traits.h:
 
 /usr/include/c++/14/bits/stl_list.h:
 
 /usr/include/c++/14/new:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QUrl:
 
 /usr/lib/linux/uapi/arm64/asm/unistd.h:
 
@@ -5933,8 +1374,6 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/c++/14/string_view:
 
-/usr/include/aarch64-linux-gnu/bits/semaphore.h:
-
 /usr/include/c++/14/tuple:
 
 /usr/include/c++/14/type_traits:
@@ -5945,17 +1384,13 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/errno.h:
 
-/lib/aarch64-linux-gnu/libpulse.so.0:
-
 /usr/share/cmake-3.31/Modules/CMakeParseLibraryArchitecture.cmake:
 
 /usr/include/features-time64.h:
 
 /usr/include/linux/types.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QGuiApplication:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qpoint.h:
+/usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo:
 
 /usr/include/pthread.h:
 
@@ -5965,11 +1400,11 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/wctype.h:
 
-/usr/local/include/osmscoutmap/MapService.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qimage.h:
-
 /usr/include/stdc-predef.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/stdio.h:
 
 /usr/include/syscall.h:
 
@@ -5979,49 +1414,23 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/include/wchar.h:
 
-/usr/local/include/osmscoutmap/StyleProcessor.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/local/include/osmscout/system/Math.h:
+/usr/include/c++/14/bits/alloc_traits.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/c++/14/bits/alloc_traits.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake:
 
-/usr/local/include/osmscout/navigation/VoiceInstructionAgent.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qcryptographichash.h:
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/14/bits/stl_algo.h:
-
-/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryGeoclue.cmake:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:
 
-/usr/lib/aarch64-linux-gnu/crti.o:
-
-/usr/local/include/osmscoutclientqt/LocationEntry.h:
-
-/usr/local/include/osmscout/routing/RouteNode.h:
-
-/usr/include/c++/14/variant:
-
-/usr/include/c++/14/bits/codecvt.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake:
 
-/usr/local/include/osmscout/util/Color.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake:
-
-/usr/local/include/osmscoutmap/LabelPath.h:
-
-/usr/include/inttypes.h:
 
 /usr/share/cmake-3.31/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
 
@@ -6029,21 +1438,7 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake:
 
-/usr/include/c++/14/tr1/modified_bessel_func.tcc:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedDataPointer:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake:
-
-/usr/local/include/osmscout/util/Exception.h:
-
-/usr/local/include/osmscout/navigation/SpeedAgent.h:
-
-/usr/include/c++/14/istream:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake:
 
@@ -6051,37 +1446,29 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake:
 
-/lib/aarch64-linux-gnu/libpng16.so.16:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake:
 
 /usr/share/cmake-3.31/Modules/CMakeParseImplicitLinkInfo.cmake:
 
-/usr/local/include/osmscoutclient/DBJob.h:
-
-/usr/local/include/osmscoutclient/ClientImportExport.h:
-
 /usr/share/cmake-3.31/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
 
-/usr/include/c++/14/pstl/glue_memory_defs.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake:
-
-/usr/local/include/osmscoutclientqt/QtRouteData.h:
 
 /usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:
 
 /usr/share/cmake-3.31/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h:
+
+/usr/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake:
+
+/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake:
 
 /usr/include/c++/14/cerrno:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake:
-
-/lib/aarch64-linux-gnu/libpcre2-16.so.0:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake:
 
@@ -6091,43 +1478,25 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake:
 
-/usr/include/aarch64-linux-gnu/bits/types/sigset_t.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake:
-
-/lib/aarch64-linux-gnu/libcap.so.2:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryPoll.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/qsggeometry.h:
-
 /usr/share/cmake-3.31/Modules/CMakeParseImplicitIncludeInfo.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtNetwork/qnetworkaccessmanager.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qsurface.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfig.cmake:
 
 /usr/share/cmake-3.31/Modules/Compiler/GNU-FindBinUtils.cmake:
 
-/usr/include/c++/14/mutex:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/QQmlContext:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake:
 
 /usr/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake:
 
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake:
-
 /usr/include/c++/14/bits/basic_string.tcc:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQmlPreviewServiceFactory.cmake:
-
-/lib/aarch64-linux-gnu/libogg.so.0:
 
 /usr/include/c++/14/bits/ranges_util.h:
 
@@ -6137,17 +1506,9 @@ bikecomputer_autogen/moc_predefs.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake:
 
-/usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5QmlModels/Qt5QmlModelsConfig.cmake:
 
-CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
-
-/usr/local/include/osmscoutmap/StyleConfig.h:
-
 /usr/lib/aarch64-linux-gnu/cmake/Qt5QmlModels/Qt5QmlModelsConfigVersion.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake:
 
 /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h:
 
@@ -6155,27 +1516,11 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 
 /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h:
 
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QList:
+/usr/include/c++/14/bits/predefined_ops.h:
 
 /usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake:
 
-/usr/include/c++/14/bits/predefined_ops.h:
-
 /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h:
-
-/usr/lib/linux/uapi/arm64/asm/errno.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/local/include/osmscoutclientqt/LookupModule.h:
-
-/usr/lib/linux/uapi/arm64/asm/unistd_64.h:
-
-/usr/local/include/osmscout/routing/SimpleRoutingService.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/share/cmake-3.31/Modules/CMakeCXXCompiler.cmake.in:
 
@@ -6193,11 +1538,7 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 
 /usr/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake:
 
-/lib/aarch64-linux-gnu/libglib-2.0.so.0:
-
 /usr/share/cmake-3.31/Modules/CMakeCompilerIdDetection.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/local_lim.h:
 
 /usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:
 
@@ -6209,19 +1550,7 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 
 /usr/share/cmake-3.31/Modules/CMakeFindBinUtils.cmake:
 
-/usr/share/cmake-3.31/Modules/CMakeParseArguments.cmake:
-
-/lib/aarch64-linux-gnu/libGL.so.1:
-
-/usr/include/c++/14/numeric:
-
-/usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
-
 /usr/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5Config.cmake:
-
-/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:
 
 /usr/include/c++/14/bits/stl_relops.h:
 
@@ -6237,37 +1566,23 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 
 /usr/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
-/usr/local/include/osmscoutclientqt/TileCache.h:
-
-/usr/include/c++/14/bits/istream.tcc:
-
 /usr/share/cmake-3.31/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
-
-/usr/include/c++/14/bits/functexcept.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/error_t.h:
 
+/usr/include/c++/14/bits/functexcept.h:
+
 /usr/share/cmake-3.31/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
-
-/lib/aarch64-linux-gnu/libicuuc.so.76:
-
-/usr/local/include/osmscout/routing/DBFileOffset.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qqmlprivate.h:
 
 /usr/include/c++/14/ext/concurrence.h:
 
 /usr/share/cmake-3.31/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
 
-/usr/include/aarch64-linux-gnu/qt5/QtQml/qtqml-config.h:
-
-/usr/include/aarch64-linux-gnu/bits/math-vector.h:
+/usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h:
 
 /usr/include/c++/14/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/14/backward/auto_ptr.h:
-
-/usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h:
 
 /usr/share/cmake-3.31/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
 
@@ -6279,47 +1594,27 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 
 /usr/share/cmake-3.31/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
 
-/usr/local/include/osmscout/navigation/ArrivalEstimateAgent.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtQuick/QQuickWindow:
-
-/usr/include/c++/14/bits/chrono_io.h:
-
 /usr/share/cmake-3.31/Modules/Compiler/IAR-DetermineCompiler.cmake:
-
-/usr/local/lib/libosmscout_client_qt.so:
-
-/usr/include/c++/14/tr1/poly_laguerre.tcc:
 
 /usr/share/cmake-3.31/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
 
-/lib/aarch64-linux-gnu/libicudata.so.76:
-
-/usr/local/include/osmscout/location/LocationService.h:
+/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/c++/14/bits/stl_raw_storage_iter.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/share/cmake-3.31/Modules/Compiler/Intel-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.31/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
 
-/usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
+/usr/share/cmake-3.31/Modules/Compiler/MSVC-DetermineCompiler.cmake:
 
-/usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
+/usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug:
+
+/usr/share/cmake-3.31/Modules/Compiler/PGI-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.31/Modules/Compiler/TI-DetermineCompiler.cmake:
 
-/usr/include/c++/14/cmath:
-
 /usr/share/cmake-3.31/Modules/Compiler/Tasking-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/waitflags.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
-
-/usr/local/include/osmscoutclientqt/FileDownloader.h:
 
 /usr/include/asm-generic/bitsperlong.h:
 
@@ -6333,96 +1628,12 @@ CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o:
 
 /usr/share/cmake-3.31/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
 
-/usr/include/c++/14/bits/this_thread_sleep.h:
-
 /usr/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
 /usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:
-
-/usr/local/include/osmscoutmap/LabelLayouterHelper.h:
-
-/usr/share/cmake-3.31/Modules/Linker/GNU.cmake:
 
 /usr/share/cmake-3.31/Modules/Platform/Linux-Determine-CXX.cmake:
 
 /usr/include/c++/14/bits/concept_check.h:
 
 /usr/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake:
-
-/usr/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake:
-
-/usr/share/cmake-3.31/Modules/Platform/Linux.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QIODevice:
-
-/usr/include/aarch64-linux-gnu/bits/types/FILE.h:
-
-/home/julian/bikecomputers/bikecomputer_gps/main.cpp:
-
-/usr/share/cmake-3.31/Modules/CMakeGenericSystem.cmake:
-
-/usr/include/aarch64-linux-gnu/bits/waitstatus.h:
-
-/usr/local/include/osmscout/feature/RoundaboutFeature.h:
-
-/usr/local/include/osmscout/elevation/SRTM.h:
-
-/usr/include/c++/14/ctime:
-
-/usr/include/aarch64-linux-gnu/bits/xopen_lim.h:
-
-bikecomputer_autogen/EWIEGA46WW/moc_gpio_reader.cpp:
-
-/usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/PGI-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug:
-
-/usr/local/include/osmscout/async/Thread.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal:
-
-/usr/local/include/osmscout/util/TagErrorReporter.h:
-
-/usr/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h:
-
-/usr/local/include/osmscout/db/OptimizeWaysLowZoom.h:
-
-/usr/include/semaphore.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h:
-
-/usr/lib/aarch64-linux-gnu/libQt5Positioning.so.5.15.15:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h:
-
-/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactorySerialNmea.cmake:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h:
-
-/usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h:
-
-/usr/include/aarch64-linux-gnu/bits/mathcalls-macros.h:
-
-/usr/share/cmake-3.31/Modules/Compiler/MSVC-DetermineCompiler.cmake:
-
-/usr/include/aarch64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/aarch64-linux-gnu/sys/types.h:
-
-/usr/include/alloca.h:
-
-/usr/share/cmake-3.31/Modules/Platform/UnixPaths.cmake:
-
-/usr/include/c++/14/bits/hashtable.h:

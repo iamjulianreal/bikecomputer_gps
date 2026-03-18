@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_GpxLogger_t {
-    QByteArrayData data[20];
-    char stringdata0[203];
+    QByteArrayData data[22];
+    char stringdata0[233];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -45,21 +45,24 @@ QT_MOC_LITERAL(9, 104, 9), // "longitude"
 QT_MOC_LITERAL(10, 114, 8), // "speedKmh"
 QT_MOC_LITERAL(11, 123, 9), // "courseDeg"
 QT_MOC_LITERAL(12, 133, 12), // "isoTimestamp"
-QT_MOC_LITERAL(13, 146, 5), // "start"
-QT_MOC_LITERAL(14, 152, 4), // "stop"
-QT_MOC_LITERAL(15, 157, 5), // "clear"
-QT_MOC_LITERAL(16, 163, 4), // "save"
-QT_MOC_LITERAL(17, 168, 9), // "recording"
-QT_MOC_LITERAL(18, 178, 10), // "pointCount"
-QT_MOC_LITERAL(19, 189, 13) // "lastSavedPath"
+QT_MOC_LITERAL(13, 146, 19), // "setCurrentHeartRate"
+QT_MOC_LITERAL(14, 166, 9), // "heartRate"
+QT_MOC_LITERAL(15, 176, 5), // "start"
+QT_MOC_LITERAL(16, 182, 4), // "stop"
+QT_MOC_LITERAL(17, 187, 5), // "clear"
+QT_MOC_LITERAL(18, 193, 4), // "save"
+QT_MOC_LITERAL(19, 198, 9), // "recording"
+QT_MOC_LITERAL(20, 208, 10), // "pointCount"
+QT_MOC_LITERAL(21, 219, 13) // "lastSavedPath"
 
     },
     "GpxLogger\0recordingChanged\0\0"
     "pointCountChanged\0lastSavedPathChanged\0"
     "saveFailed\0message\0addPoint\0latitude\0"
     "longitude\0speedKmh\0courseDeg\0isoTimestamp\0"
-    "start\0stop\0clear\0save\0recording\0"
-    "pointCount\0lastSavedPath"
+    "setCurrentHeartRate\0heartRate\0start\0"
+    "stop\0clear\0save\0recording\0pointCount\0"
+    "lastSavedPath"
 };
 #undef QT_MOC_LITERAL
 
@@ -69,27 +72,28 @@ static const uint qt_meta_data_GpxLogger[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
-       3,   80, // properties
+      10,   14, // methods
+       3,   88, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x06 /* Public */,
-       3,    0,   60,    2, 0x06 /* Public */,
-       4,    0,   61,    2, 0x06 /* Public */,
-       5,    1,   62,    2, 0x06 /* Public */,
+       1,    0,   64,    2, 0x06 /* Public */,
+       3,    0,   65,    2, 0x06 /* Public */,
+       4,    0,   66,    2, 0x06 /* Public */,
+       5,    1,   67,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       7,    5,   65,    2, 0x0a /* Public */,
+       7,    5,   70,    2, 0x0a /* Public */,
+      13,    1,   81,    2, 0x0a /* Public */,
 
  // methods: name, argc, parameters, tag, flags
-      13,    0,   76,    2, 0x02 /* Public */,
-      14,    0,   77,    2, 0x02 /* Public */,
-      15,    0,   78,    2, 0x02 /* Public */,
-      16,    0,   79,    2, 0x02 /* Public */,
+      15,    0,   84,    2, 0x02 /* Public */,
+      16,    0,   85,    2, 0x02 /* Public */,
+      17,    0,   86,    2, 0x02 /* Public */,
+      18,    0,   87,    2, 0x02 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -99,6 +103,7 @@ static const uint qt_meta_data_GpxLogger[] = {
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::Double, QMetaType::QString,    8,    9,   10,   11,   12,
+    QMetaType::Void, QMetaType::Int,   14,
 
  // methods: parameters
     QMetaType::Void,
@@ -107,9 +112,9 @@ static const uint qt_meta_data_GpxLogger[] = {
     QMetaType::QString,
 
  // properties: name, type, flags
-      17, QMetaType::Bool, 0x00495001,
-      18, QMetaType::Int, 0x00495001,
-      19, QMetaType::QString, 0x00495001,
+      19, QMetaType::Bool, 0x00495001,
+      20, QMetaType::Int, 0x00495001,
+      21, QMetaType::QString, 0x00495001,
 
  // properties: notify_signal_id
        0,
@@ -130,10 +135,11 @@ void GpxLogger::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 2: _t->lastSavedPathChanged(); break;
         case 3: _t->saveFailed((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 4: _t->addPoint((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< const QString(*)>(_a[5]))); break;
-        case 5: _t->start(); break;
-        case 6: _t->stop(); break;
-        case 7: _t->clear(); break;
-        case 8: { QString _r = _t->save();
+        case 5: _t->setCurrentHeartRate((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: _t->start(); break;
+        case 7: _t->stop(); break;
+        case 8: _t->clear(); break;
+        case 9: { QString _r = _t->save();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -214,13 +220,13 @@ int GpxLogger::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 10)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 9;
+        _id -= 10;
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty

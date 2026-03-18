@@ -755,4 +755,41 @@ CMakeFiles/bikecomputer.dir/main.cpp.o: \
  /usr/include/gpiod.h /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
  /home/julian/bikecomputers/bikecomputer_gps/MapController.h \
  /home/julian/bikecomputers/bikecomputer_gps/BacklightController.h \
- /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h
+ /home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.h \
+ /home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothaddress.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetoothglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetooth-config.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceDiscoveryAgent \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdevicediscoveryagent.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdeviceinfo.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/quuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycharacteristic.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedPointer \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetooth.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergydescriptor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariantMap \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyController \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycontroller.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyAdvertisingData \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyadvertisingdata.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyservice.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService

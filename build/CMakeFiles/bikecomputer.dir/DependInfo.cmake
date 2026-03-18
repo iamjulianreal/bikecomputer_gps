@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/julian/bikecomputers/bikecomputer_gps/BatteryMonitor.cpp" "CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/BatteryMonitor.cpp.o.d"
   "/home/julian/bikecomputers/bikecomputer_gps/GpsPositionSource.cpp" "CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o.d"
   "/home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp" "CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o.d"
+  "/home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.cpp" "CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.o.d"
   "/home/julian/bikecomputers/bikecomputer_gps/MapController.cpp" "CMakeFiles/bikecomputer.dir/MapController.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/MapController.cpp.o.d"
   "/home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp" "CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o.d"
   "/home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/mocs_compilation.cpp" "CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o.d"

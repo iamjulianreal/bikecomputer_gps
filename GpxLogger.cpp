@@ -1,5 +1,6 @@
 #include "GpxLogger.h"
 
+#include <QCoreApplication>
 #include <QDir>
 #include <QFile>
 #include <QStandardPaths>
@@ -33,7 +34,8 @@ void GpxLogger::clear() {
   emit pointCountChanged();
 }
 
-void GpxLogger::addPoint(double latitude, double longitude, double speedKmh, double courseDeg, const QString &isoTimestamp) {
+void GpxLogger::addPoint(double latitude, double longitude, double speedKmh, double courseDeg,
+                         const QString &isoTimestamp) {
   if (!m_recording) {
     return;
   }
@@ -43,6 +45,8 @@ void GpxLogger::addPoint(double latitude, double longitude, double speedKmh, dou
   p.lon = longitude;
   p.speedKmh = speedKmh;
   p.courseDeg = courseDeg;
+  p.heartRate = m_lastKnownHeartRate;
+  p.hasHeartRate = m_lastKnownHeartRate > 0;
 
   p.time = QDateTime::fromString(isoTimestamp, Qt::ISODate);
   if (!p.time.isValid()) {
@@ -53,6 +57,14 @@ void GpxLogger::addPoint(double latitude, double longitude, double speedKmh, dou
   emit pointCountChanged();
 }
 
+void GpxLogger::setCurrentHeartRate(int heartRate) {
+  if (heartRate <= 0) {
+    return;
+  }
+
+  m_lastKnownHeartRate = heartRate;
+}
+
 QString GpxLogger::save() {
   if (m_points.isEmpty()) {
     emit saveFailed(QStringLiteral("No points to save"));
@@ -60,6 +72,12 @@ QString GpxLogger::save() {
   }
 
   QString baseDir = qEnvironmentVariable("BIKECOMPUTER_GPX_DIR");
+  if (baseDir.isEmpty()) {
+    baseDir = QDir::current().filePath(QStringLiteral("gpx"));
+  }
+  if (baseDir.isEmpty()) {
+    baseDir = QCoreApplication::applicationDirPath() + QStringLiteral("/gpx");
+  }
   if (baseDir.isEmpty()) {
     baseDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
   }
@@ -85,7 +103,9 @@ QString GpxLogger::save() {
 
   QTextStream out(&file);
   out << "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-  out << "<gpx version=\"1.1\" creator=\"bikecomputer\" xmlns=\"http://www.topografix.com/GPX/1/1\">\n";
+  out << "<gpx version=\"1.1\" creator=\"bikecomputer\" "
+         "xmlns=\"http://www.topografix.com/GPX/1/1\" "
+         "xmlns:gpxtpx=\"http://www.garmin.com/xmlschemas/TrackPointExtension/v2\">\n";
   out << "  <trk>\n";
   out << "    <name>Bike Activity</name>\n";
   out << "    <trkseg>\n";
@@ -96,6 +116,13 @@ QString GpxLogger::save() {
     out << "        <time>" << p.time.toUTC().toString(Qt::ISODate) << "</time>\n";
     out << "        <course>" << QString::number(p.courseDeg, 'f', 2) << "</course>\n";
     out << "        <speed>" << QString::number(p.speedKmh / 3.6, 'f', 3) << "</speed>\n";
+    if (p.hasHeartRate) {
+      out << "        <extensions>\n";
+      out << "          <gpxtpx:TrackPointExtension>\n";
+      out << "            <gpxtpx:hr>" << p.heartRate << "</gpxtpx:hr>\n";
+      out << "          </gpxtpx:TrackPointExtension>\n";
+      out << "        </extensions>\n";
+    }
     out << "      </trkpt>\n";
   }
 

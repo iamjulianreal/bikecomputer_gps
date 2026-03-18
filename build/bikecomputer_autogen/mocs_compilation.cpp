@@ -3,5 +3,6 @@
 #include "EWIEGA46WW/moc_BatteryMonitor.cpp"
 #include "EWIEGA46WW/moc_GpsPositionSource.cpp"
 #include "EWIEGA46WW/moc_GpxLogger.cpp"
+#include "EWIEGA46WW/moc_HeartRateMonitor.cpp"
 #include "EWIEGA46WW/moc_MapController.cpp"
 #include "EWIEGA46WW/moc_gpio_reader.cpp"

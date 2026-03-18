@@ -6,6 +6,7 @@ Item {
     anchors.fill: parent
 
     property var positionSource
+    property var hrMonitor
     property real fallbackLat: 48.207200
     property real fallbackLon: 15.618000
 
@@ -57,5 +58,23 @@ Item {
             }
         }
 
+        Rectangle {
+            width: parent.width
+            height: 52
+            radius: 8
+            color: "#1c2230"
+            border.color: hrMonitor && hrMonitor.connected ? "#2ecc71" : "#e74c3c"
+
+            Text {
+                anchors.centerIn: parent
+                color: "white"
+                font.pixelSize: 18
+                font.bold: true
+                horizontalAlignment: Text.AlignHCenter
+                text: hrMonitor && hrMonitor.connected
+                      ? "HR MONITOR\nVERBUNDEN"
+                      : "HR MONITOR\nNICHT VERBUNDEN"
+            }
+        }
     }
 }

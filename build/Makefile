@@ -251,6 +251,30 @@ GpxLogger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/GpxLogger.cpp.s
 .PHONY : GpxLogger.cpp.s
 
+HeartRateMonitor.o: HeartRateMonitor.cpp.o
+.PHONY : HeartRateMonitor.o
+
+# target to build an object file
+HeartRateMonitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.o
+.PHONY : HeartRateMonitor.cpp.o
+
+HeartRateMonitor.i: HeartRateMonitor.cpp.i
+.PHONY : HeartRateMonitor.i
+
+# target to preprocess a source file
+HeartRateMonitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.i
+.PHONY : HeartRateMonitor.cpp.i
+
+HeartRateMonitor.s: HeartRateMonitor.cpp.s
+.PHONY : HeartRateMonitor.s
+
+# target to generate assembly for a file
+HeartRateMonitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bikecomputer.dir/build.make CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.s
+.PHONY : HeartRateMonitor.cpp.s
+
 MapController.o: MapController.cpp.o
 .PHONY : MapController.o
 
@@ -370,6 +394,9 @@ help:
 	@echo "... GpxLogger.o"
 	@echo "... GpxLogger.i"
 	@echo "... GpxLogger.s"
+	@echo "... HeartRateMonitor.o"
+	@echo "... HeartRateMonitor.i"
+	@echo "... HeartRateMonitor.s"
 	@echo "... MapController.o"
 	@echo "... MapController.i"
 	@echo "... MapController.s"

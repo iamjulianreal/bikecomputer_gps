@@ -5,6 +5,7 @@ Item {
     anchors.fill: parent
 
     property var positionSource
+    property var hrMonitor
     property real totalDistanceM: 0
     property real totalAscentM: 0
     property bool hasLastPoint: false
@@ -13,7 +14,7 @@ Item {
     property real lastAlt: 0
     property string clockText: "--:--:--"
     property bool recording: false
-    property date activityStartTime: null
+    property var activityStartTime: undefined
     property string activityDurationText: "00:00"
 
     function formatCoord(v) {
@@ -56,9 +57,12 @@ Item {
                 + ":" + (minutes < 10 ? "0" : "") + minutes
     }
 
-
     function metricText(value, unit) {
         return value + "\n" + unit
+    }
+
+    function heartRateText() {
+        return hrMonitor && hrMonitor.currentHeartRate > 0 ? hrMonitor.currentHeartRate : "--"
     }
 
     Component.onCompleted: updateClock()
@@ -136,7 +140,7 @@ Item {
 
             Rectangle {
                 width: (parent.width - parent.spacing) / 2
-                height: 46
+                height: 40
                 radius: 6
                 color: "#1E1E1E"
                 Text {
@@ -149,7 +153,7 @@ Item {
 
             Rectangle {
                 width: (parent.width - parent.spacing) / 2
-                height: 46
+                height: 40
                 radius: 6
                 color: "#1E1E1E"
                 Text {
@@ -167,7 +171,7 @@ Item {
 
             Rectangle {
                 width: (parent.width - parent.spacing) / 2
-                height: 46
+                height: 40
                 radius: 6
                 color: "#1E1E1E"
                 Text {
@@ -180,7 +184,7 @@ Item {
 
             Rectangle {
                 width: (parent.width - parent.spacing) / 2
-                height: 46
+                height: 40
                 radius: 6
                 color: "#1E1E1E"
                 Text {
@@ -198,7 +202,7 @@ Item {
 
             Rectangle {
                 width: (parent.width - parent.spacing) / 2
-                height: 46
+                height: 40
                 radius: 6
                 color: "#1E1E1E"
                 Text {
@@ -211,7 +215,7 @@ Item {
 
             Rectangle {
                 width: (parent.width - parent.spacing) / 2
-                height: 46
+                height: 40
                 radius: 6
                 color: "#1E1E1E"
                 Text {
@@ -223,15 +227,34 @@ Item {
             }
         }
 
-        Rectangle {
+        Row {
             width: parent.width
-            height: 34
-            radius: 6
-            color: "#1A1A1A"
-            Text {
-                anchors.centerIn: parent
-                color: "white"
-                text: "Uhrzeit: " + root.clockText
+            spacing: 8
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 40
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(root.heartRateText(), "bpm")
+                }
+            }
+
+            Rectangle {
+                width: (parent.width - parent.spacing) / 2
+                height: 40
+                radius: 6
+                color: "#1E1E1E"
+                Text {
+                    anchors.centerIn: parent
+                    color: "white"
+                    horizontalAlignment: Text.AlignHCenter
+                    text: root.metricText(root.clockText, "clock")
+                }
             }
         }
     }

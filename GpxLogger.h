@@ -10,6 +10,8 @@ struct TrackPoint {
   double speedKmh = 0.0;
   double courseDeg = 0.0;
   QDateTime time;
+  int heartRate = 0;
+  bool hasHeartRate = false;
 };
 
 class GpxLogger : public QObject {
@@ -32,6 +34,7 @@ public:
 
 public slots:
   void addPoint(double latitude, double longitude, double speedKmh, double courseDeg, const QString &isoTimestamp);
+  void setCurrentHeartRate(int heartRate);
 
 signals:
   void recordingChanged();
@@ -43,4 +46,5 @@ private:
   bool m_recording = false;
   QVector<TrackPoint> m_points;
   QString m_lastSavedPath;
+  int m_lastKnownHeartRate = 0;
 };

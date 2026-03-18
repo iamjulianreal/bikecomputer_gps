@@ -1,11 +1,10 @@
-CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
- /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp \
+CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.o: \
+ /home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.cpp \
  /usr/include/stdc-predef.h \
- /home/julian/bikecomputers/bikecomputer_gps/GpxLogger.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QDateTime \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qdatetime.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
+ /home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothaddress.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetoothglobal.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/c++/14/type_traits \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
@@ -161,6 +160,8 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobalstatic.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnumeric.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qversiontagging.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetooth-config.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qrefcount.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qnamespace.h \
@@ -223,15 +224,21 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
  /usr/include/c++/14/bits/cxxabi_init_exception.h \
  /usr/include/c++/14/typeinfo /usr/include/c++/14/bits/nested_exception.h \
  /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qchar.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearray.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringliteral.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringalgorithms.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringview.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QMetaType \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qalgorithms.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qhashfunctions.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstring.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qpair.h \
  /usr/include/c++/14/numeric /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/limits /usr/include/c++/14/pstl/glue_numeric_defs.h \
@@ -248,23 +255,6 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/array \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
- /usr/include/c++/14/list /usr/include/c++/14/bits/stl_list.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/bits/list.tcc \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
  /usr/include/c++/14/memory \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
@@ -279,13 +269,31 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/shared_ptr.h \
  /usr/include/c++/14/bits/shared_ptr_base.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
  /usr/include/c++/14/ext/concurrence.h \
  /usr/include/c++/14/bits/shared_ptr_atomic.h \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/bits/ranges_uninitialized.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h /usr/include/c++/14/map \
+ /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
+ /usr/include/c++/14/list /usr/include/c++/14/bits/stl_list.h \
+ /usr/include/c++/14/bits/list.tcc /usr/include/c++/14/map \
  /usr/include/c++/14/bits/stl_tree.h /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceDiscoveryAgent \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdevicediscoveryagent.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qlist.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qiterator.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbytearraylist.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringlist.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qregexp.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qstringmatcher.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qscopedpointer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qmetatype.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject_impl.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
  /usr/include/c++/14/ratio /usr/include/c++/14/ctime \
@@ -305,25 +313,52 @@ CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o: \
  /usr/include/c++/14/span /usr/include/c++/14/variant \
  /usr/include/c++/14/bits/unicode.h \
  /usr/include/c++/14/bits/unicode-data.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QCoreApplication \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreapplication.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qcoreevent.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qeventloop.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QDir \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qdir.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qfileinfo.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qfiledevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QFile \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qfile.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QStandardPaths \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qstandardpaths.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/QTextStream \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdeviceinfo.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/quuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qhash.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
- /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qshareddata.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycharacteristic.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedPointer \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetooth.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergydescriptor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariantMap \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyController \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycontroller.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyAdvertisingData \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyadvertisingdata.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyservice.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QTimer \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qtimer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug

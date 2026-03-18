@@ -164,6 +164,8 @@
 		"/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryGeoclue2.cmake",
 		"/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryPoll.cmake",
 		"/usr/lib/aarch64-linux-gnu/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactorySerialNmea.cmake",
+		"/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfigVersion.cmake",
+		"/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfig.cmake",
 		"/home/julian/bikecomputers/bikecomputer_gps/app.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/julian/bikecomputers/bikecomputer_gps",
@@ -197,6 +199,12 @@
 			null
 		],
 		[
+			"/home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.h",
+			"MU",
+			"EWIEGA46WW/moc_HeartRateMonitor.cpp",
+			null
+		],
+		[
 			"/home/julian/bikecomputers/bikecomputer_gps/MapController.h",
 			"MU",
 			"EWIEGA46WW/moc_MapController.cpp",
@@ -214,6 +222,7 @@
 	"MOC_COMPILATION_FILE" : "/home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"QT_BLUETOOTH_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
@@ -241,6 +250,7 @@
 		"/usr/include/aarch64-linux-gnu/qt5/QtQuick",
 		"/usr/include/aarch64-linux-gnu/qt5/QtQmlModels",
 		"/usr/include/aarch64-linux-gnu/qt5/QtPositioning",
+		"/usr/include/aarch64-linux-gnu/qt5/QtBluetooth",
 		"/usr/include/c++/14",
 		"/usr/include/aarch64-linux-gnu/c++/14",
 		"/usr/include/c++/14/backward",
@@ -291,6 +301,11 @@
 		],
 		[
 			"/home/julian/bikecomputers/bikecomputer_gps/GpxLogger.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/julian/bikecomputers/bikecomputer_gps/HeartRateMonitor.cpp",
 			"MU",
 			null
 		],

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bikecomputer.dir/GpsPositionSource.cpp.o.d"
   "CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o"
   "CMakeFiles/bikecomputer.dir/GpxLogger.cpp.o.d"
+  "CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.o"
+  "CMakeFiles/bikecomputer.dir/HeartRateMonitor.cpp.o.d"
   "CMakeFiles/bikecomputer.dir/MapController.cpp.o"
   "CMakeFiles/bikecomputer.dir/MapController.cpp.o.d"
   "CMakeFiles/bikecomputer.dir/bikecomputer_autogen/EWIEGA46WW/qrc_app.cpp.o"

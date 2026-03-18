@@ -11,6 +11,7 @@
 #include "MapController.h"
 #include "BacklightController.h"
 #include "BatteryMonitor.h"
+#include "HeartRateMonitor.h"
 
 int main(int argc, char *argv[])
 {
@@ -45,8 +46,12 @@ int main(int argc, char *argv[])
     GpxLogger gpxLogger;
     BacklightController backlightController;
     BatteryMonitor batteryMonitor;
+    HeartRateMonitor heartRateMonitor;
     GpsPositionSource gpsSource;
     gpsSource.startUpdates();
+
+    QObject::connect(&heartRateMonitor, &HeartRateMonitor::heartRateReceived,
+                     &gpxLogger, &GpxLogger::setCurrentHeartRate);
 
     QQmlApplicationEngine engine;
 
@@ -62,6 +67,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("gpxLogger", &gpxLogger);
     engine.rootContext()->setContextProperty("backlightController", &backlightController);
     engine.rootContext()->setContextProperty("batteryMonitor", &batteryMonitor);
+    engine.rootContext()->setContextProperty("heartRateMonitor", &heartRateMonitor);
     engine.rootContext()->setContextProperty("gpsSource", &gpsSource);
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/Main.qml")));

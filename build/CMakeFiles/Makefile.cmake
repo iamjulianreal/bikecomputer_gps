@@ -14,6 +14,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5Config.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake"
+  "/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfig.cmake"
+  "/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth/Qt5BluetoothConfigVersion.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"

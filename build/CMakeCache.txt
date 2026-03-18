@@ -210,6 +210,9 @@ OSMSCOUT_SOURCE_ROOT:PATH=
 //Path to a library.
 PIGPIOD_IF2_LIB:FILEPATH=/usr/local/lib/libpigpiod_if2.so
 
+//The directory containing a CMake configuration file for Qt5Bluetooth.
+Qt5Bluetooth_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/Qt5Bluetooth
+
 //The directory containing a CMake configuration file for Qt5Core.
 Qt5Core_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/Qt5Core
 

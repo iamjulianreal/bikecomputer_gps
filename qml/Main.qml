@@ -28,6 +28,13 @@ ApplicationWindow {
         }
     }
 
+    Connections {
+        target: gpxLogger
+        function onSaveFailed(message) {
+            console.log("GPX save failed:", message)
+        }
+    }
+
     MapPage {
         id: mapPage
         anchors.fill: parent
@@ -41,6 +48,7 @@ ApplicationWindow {
         visible: win.pageIndex === 1
         positionSource: gpsSource
         recording: gpxLogger.recording
+        hrMonitor: heartRateMonitor
     }
 
     ConnectivityPage {
@@ -48,6 +56,7 @@ ApplicationWindow {
         anchors.fill: parent
         visible: win.pageIndex === 2
         positionSource: gpsSource
+        hrMonitor: heartRateMonitor
     }
 
     StartStopMenu {
@@ -67,7 +76,11 @@ ApplicationWindow {
         }
         onSaveRequested: {
             var path = gpxLogger.save()
-            console.log("GPX saved:", path)
+            if (path && path.length > 0) {
+                console.log("GPX saved:", path)
+            } else {
+                console.log("GPX save returned no path")
+            }
             win.menuOpen = false
         }
     }

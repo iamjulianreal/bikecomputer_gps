@@ -334,6 +334,56 @@ CMakeFiles/bikecomputer.dir/bikecomputer_autogen/mocs_compilation.cpp.o: \
  /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../GpxLogger.h \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/QVector \
  /usr/include/aarch64-linux-gnu/qt5/QtCore/qvector.h \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_HeartRateMonitor.cpp \
+ /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../HeartRateMonitor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothaddress.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetoothglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qtbluetooth-config.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QByteArray \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceDiscoveryAgent \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdevicediscoveryagent.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothdeviceinfo.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothAddress \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QtGlobal \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qglobal.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/quuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QDebug \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qdebug.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qtextstream.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qiodevice.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycharacteristic.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QSharedPointer \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qsharedpointer.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetooth.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QBluetoothUuid \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergydescriptor.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/QVariantMap \
+ /usr/include/aarch64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyController \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergycontroller.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyAdvertisingData \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyadvertisingdata.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/qlowenergyservice.h \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyCharacteristic \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyDescriptor \
+ /usr/include/aarch64-linux-gnu/qt5/QtBluetooth/QLowEnergyService \
  /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_MapController.cpp \
  /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/../../../MapController.h \
  /home/julian/bikecomputers/bikecomputer_gps/build/bikecomputer_autogen/EWIEGA46WW/moc_gpio_reader.cpp \
